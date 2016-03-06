@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Как меняется Москва</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+
+</style>
+</head>
+<body>
+
+<style>
+  #header {
+  	font-family:"Arial", "Helvetica", sans-serif;
+  	position: absolute;
+  	width: 400px;
+  	font-size: 28px;
+  	z-index: 1000;
+  	top: 10px;
+  	left: 50%;
+  	margin-left: -200px;
+  	color: #333;
+  	text-align: center;
+  	padding: 10px; 
+  	background: rgba(255,255,255,0.8);
+
+  }
+
+  .sou-ui {
+    	font-family:"Arial", "Helvetica", sans-serif;
+    	    font-size:11px;
+    color:#404040;
+  position:absolute;
+  bottom:5px;left:10px;
+  z-index:1;
+  }
+  .sou-ui a {
+  	text-decoration:none;
+  }
+    .menu-ui {
+  background:#fff;
+  position:absolute;
+  top:10px;right:10px;
+  z-index:1;
+    width:140px;
+  border:1px solid rgba(0,0,0,0.4);
+  }
+  .menu-ui a {
+  	font-family:"Arial", "Helvetica", sans-serif;
+    font-size:13px;
+    color:#404040;
+    display:block;
+    margin:0;padding:0;
+    padding:10px;
+    text-decoration: none;
+    border-bottom:1px solid rgba(0,0,0,0.25);
+    text-align:center;
+    }
+    .menu-ui a:hover {
+      background:#8c8c8c;
+      color:#404040;
+      }
+    .menu-ui a.active {
+      background:#7f8a95;
+      color:#FFF;
+      }
+      .menu-ui a.active:hover {
+        background:#58626c;
+        }
+</style>
+<div id='header'>Как меняется Москва</div>
+<nav id='menu-ui' class='menu-ui'></nav>
+<nav id='sou-ui' class='sou-ui'>Источники: <a href="http://www.rbc.ru/" target="_blanc">©РБК<a>, data.mos.ru</nav>
+<div id='map'></div>
+
+<script>
+//L.mapbox.accessToken = 'pk.eyJ1Ijoidi1vbC1rb3ZhIiwiYSI6ImNpbGNoOTE0MzAwNmt2c20yb2lwejFxZXEifQ.hPi6KJNgfdSCcK2oiB-sqQ';
+
+    var map = L.map('map').setView([55.744537,37.625224], 11);
+
+//L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    //attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+//}).addTo(map);
+
+var stamenLayer = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
+  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+}).addTo(map);
+
+// create rectangle
+L.rectangle([
+  [-5000, 0],
+  [5000, 5000]], {stroke: false, fillColor: "#fff", fillOpacity: 0.8}
+  ).addTo(map);
+ 
+ var layers = document.getElementById('menu-ui');
+
+var larIcon = L.icon({
+    iconUrl: 'ilarsmall.png',
+    shadowUrl: 'ilarssmallhad.png',
+
+    iconSize:     [25, 21], // size of the icon
+    shadowSize:   [31, 6], // size of the shadow
+    iconAnchor:   [12, 21], // point of the icon which will correspond to marker's location
+    shadowAnchor: [15, 6],  // the same for the shadow
+    popupAnchor:  [0, -10] // point from which the popup should open relative to the iconAnchor
+});
+
+var templIcon = L.icon({
+    iconUrl: 'itemples.png',
+    shadowUrl: 'ilarssmallhad.png',
+
+    iconSize:     [19, 36], // size of the icon
+    shadowSize:   [31, 6], // size of the shadow
+    iconAnchor:   [9, 36], // point of the icon which will correspond to marker's location
+    shadowAnchor: [15, 6],  // the same for the shadow
+    popupAnchor:  [0, -15] // point from which the popup should open relative to the iconAnchor
+});
+
+
+var featureLayer = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "stall.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+    f.properties['icon'] = larIcon;
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+
+
+    return L.marker(latlng, {icon: larIcon});
+    },
+    //style: function (feature) {
+    //return feature.properties;
+      
+    //},
+
+
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('Адрес снесенного строения:</br><b>' + feature.properties.name + '</b>');
+    }
+}).addTo(featureLayer);
+  
+});
+
+var featureLayer2 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "temples.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+    f.properties['icon'] = templIcon;
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+
+
+    return L.marker(latlng, {icon: templIcon});
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b>' + feature.properties.name + '</b></br>' + feature.properties.adr);
+    }
+}).addTo(featureLayer2);
+  
+});
+var featureLayer3 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "my_street.geojson", function( data ) {
+
+//L.featureGroup(data).addTo(map);
+L.geoJson(data, {
+    style: function (feature) {
+        return {
+          "color": "#e7781f",
+          "weight": 3,
+          "opacity": 0.8
+      };
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b>' + feature.properties.name + '</b>');
+    }
+}).addTo(featureLayer3);
+  
+});
+var featureLayer4 = L.featureGroup()
+L.featureGroup()
+   $.getJSON( "ul_pl_park.geojson", function( data ) {
+
+//L.featureGroup(data).addTo(map);
+L.geoJson(data, {
+    style: function (feature) {
+        return {"color": "#e11000",
+          "weight": 2,
+          "opacity": 0.7};
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('Адрес: <b>' + feature.properties.Attributes.Address + '</b></br>Стоимость часа парковки: <b>' + feature.properties.Attributes.Price + ' руб.</b>');
+    }
+}).addTo(featureLayer4);
+  
+});
+
+addLayer(featureLayer, 'Строения, снесенные по решению мэрии как «самострой» в ночь на 9 февраля 2016 года', 4);
+addLayer(featureLayer2, 'Новые православные храмы (построенные или строящиеся в рамках программы «200 храмов»)', 3);
+addLayer(featureLayer3, 'Улицы, реконструированные в 2015 году в рамках программы «Моя улица»', 2);
+addLayer(featureLayer4, 'Платные парковки', 1);
+
+function addLayer(layer, name, zIndex) {
+    layer
+        .setZIndex(zIndex)
+        .addTo(map);
+
+    // Create a simple layer switcher that
+    // toggles layers on and off.
+    var link = document.createElement('a');
+        link.href = '#';
+        link.className = 'active';
+        link.innerHTML = name;
+
+    link.onclick = function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (map.hasLayer(layer)) {
+            map.removeLayer(layer);
+            this.className = '';
+        } else {
+            map.addLayer(layer);
+            this.className = 'active';
+        }
+    };
+
+    layers.appendChild(link);
+}
+
+</script>
+</body>
+</html>
