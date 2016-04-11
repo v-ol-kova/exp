@@ -1,0 +1,584 @@
+{
+"type": "FeatureCollection",                                                                             
+"features": [
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["41.730394", "43.884514"] },
+"properties": { "name": 
+"Карачаево-Черкесия","Akt_z": "113,1", "Cred_one": "1,8", "Dol_z": "61,2", "Sum_d": "177,6", "Dol_d": "74,5", "Dol_b": "3,2", "Dol_pr_cr": "17,6", "Akt_z_dot": "113.1", "Cred_one_dot": "1.8", "Dol_z_dot": "61.2", "Sum_d_dot": "177.6", "Dol_d_dot": "74.5", "Dol_b_dot": "3.2", "Dol_pr_cr_dot": "17.6"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["45.773161", "46.567685"] },
+"properties": { "name": 
+"Калмыкия","Akt_z": "99,2", "Cred_one": "1,9", "Dol_z": "74,6", "Sum_d": "210,1", "Dol_d": "66,4", "Dol_b": "1,9", "Dol_pr_cr": "11,5", "Akt_z_dot": "99.2", "Cred_one_dot": "1.9", "Dol_z_dot": "74.6", "Sum_d_dot": "210.1", "Dol_d_dot": "66.4", "Dol_b_dot": "1.9", "Dol_pr_cr_dot": "11.5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["47.09498", "42.143189"] },
+"properties": { "name": 
+"Дагестан","Akt_z": "210,8", "Cred_one": "1,4", "Dol_z": "18,2", "Sum_d": "137,7", "Dol_d": "59,3", "Dol_b": "1,2", "Dol_pr_cr": "12,8", "Akt_z_dot": "210.8", "Cred_one_dot": "1.4", "Dol_z_dot": "18.2", "Sum_d_dot": "137.7", "Dol_d_dot": "59.3", "Dol_b_dot": "1.2", "Dol_pr_cr_dot": "12.8"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["40.175446", "44.822916"] },
+"properties": { "name": 
+"Адыгея","Akt_z": "132,6", "Cred_one": "1,8", "Dol_z": "71,6", "Sum_d": "150,5", "Dol_d": "56,2", "Dol_b": "0,9", "Dol_pr_cr": "14,4", "Akt_z_dot": "132.6", "Cred_one_dot": "1.8", "Dol_z_dot": "71.6", "Sum_d_dot": "150.5", "Dol_d_dot": "56.2", "Dol_b_dot": "0.9", "Dol_pr_cr_dot": "14.4"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["39.705598", "45.641529"] },
+"properties": { "name": 
+"Краснодарский край","Akt_z": "1479,9", "Cred_one": "1,8", "Dol_z": "57,5", "Sum_d": "181,6", "Dol_d": "55,3", "Dol_b": "1,5", "Dol_pr_cr": "13,4", "Akt_z_dot": "1479.9", "Cred_one_dot": "1.8", "Dol_z_dot": "57.5", "Sum_d_dot": "181.6", "Dol_d_dot": "55.3", "Dol_b_dot": "1.5", "Dol_pr_cr_dot": "13.4"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["41.483008", "57.105685"] },
+"properties": { "name": 
+"Ивановская область","Akt_z": "263,8", "Cred_one": "1,7", "Dol_z": "51", "Sum_d": "157,6", "Dol_d": "54,9", "Dol_b": "1,1", "Dol_pr_cr": "15", "Akt_z_dot": "263.8", "Cred_one_dot": "1.7", "Dol_z_dot": "51", "Sum_d_dot": "157.6", "Dol_d_dot": "54.9", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "15"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["43.56285", "43.393247"] },
+"properties": { "name": 
+"Кабардино-Балкария","Akt_z": "180,9", "Cred_one": "1,7", "Dol_z": "46,3", "Sum_d": "163,7", "Dol_d": "54,9", "Dol_b": "1,7", "Dol_pr_cr": "19", "Akt_z_dot": "180.9", "Cred_one_dot": "1.7", "Dol_z_dot": "46.3", "Sum_d_dot": "163.7", "Dol_d_dot": "54.9", "Dol_b_dot": "1.7", "Dol_pr_cr_dot": "19"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["33.26909", "53.04086"] },
+"properties": { "name": 
+"Брянская область","Akt_z": "354", "Cred_one": "1,6", "Dol_z": "58,7", "Sum_d": "166,9", "Dol_d": "54,7", "Dol_b": "1,1", "Dol_pr_cr": "10,6", "Akt_z_dot": "354", "Cred_one_dot": "1.6", "Dol_z_dot": "58.7", "Sum_d_dot": "166.9", "Dol_d_dot": "54.7", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "10.6"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["82.67586", "51.79363"] },
+"properties": { "name": 
+"Алтайский край","Akt_z": "804", "Cred_one": "2", "Dol_z": "76,1", "Sum_d": "142,9", "Dol_d": "53,6", "Dol_b": "0,7", "Dol_pr_cr": "11,5", "Akt_z_dot": "804", "Cred_one_dot": "2", "Dol_z_dot": "76.1", "Sum_d_dot": "142.9", "Dol_d_dot": "53.6", "Dol_b_dot": "0.7", "Dol_pr_cr_dot": "11.5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["40.592668", "56.155347"] },
+"properties": { "name": 
+"Владимирская область","Akt_z": "302,1", "Cred_one": "1,6", "Dol_z": "42,3", "Sum_d": "153,4", "Dol_d": "53,4", "Dol_b": "1,3", "Dol_pr_cr": "17", "Akt_z_dot": "302.1", "Cred_one_dot": "1.6", "Dol_z_dot": "42.3", "Sum_d_dot": "153.4", "Dol_d_dot": "53.4", "Dol_b_dot": "1.3", "Dol_pr_cr_dot": "17"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["95.626017", "51.887267"] },
+"properties": { "name": 
+"Тыва","Akt_z": "83,2", "Cred_one": "1,6", "Dol_z": "78,2", "Sum_d": "163,9", "Dol_d": "53,1", "Dol_b": "0,8", "Dol_pr_cr": "16,4", "Akt_z_dot": "83.2", "Cred_one_dot": "1.6", "Dol_z_dot": "78.2", "Sum_d_dot": "163.9", "Dol_d_dot": "53.1", "Dol_b_dot": "0.8", "Dol_pr_cr_dot": "16.4"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["43.95411", "58.550107"] },
+"properties": { "name": 
+"Костромская область","Akt_z": "188,9", "Cred_one": "1,7", "Dol_z": "61,8", "Sum_d": "156,3", "Dol_d": "53", "Dol_b": "1", "Dol_pr_cr": "11,8", "Akt_z_dot": "188.9", "Cred_one_dot": "1.7", "Dol_z_dot": "61.8", "Sum_d_dot": "156.3", "Dol_d_dot": "53", "Dol_b_dot": "1", "Dol_pr_cr_dot": "11.8"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["36.484963", "52.745019"] },
+"properties": { "name": 
+"Орловская область","Akt_z": "217,5", "Cred_one": "1,7", "Dol_z": "59,1", "Sum_d": "146,4", "Dol_d": "52,9", "Dol_b": "0,9", "Dol_pr_cr": "10,1", "Akt_z_dot": "217.5", "Cred_one_dot": "1.7", "Dol_z_dot": "59.1", "Sum_d_dot": "146.4", "Dol_d_dot": "52.9", "Dol_b_dot": "0.9", "Dol_pr_cr_dot": "10.1"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["43.520214", "44.668099"] },
+"properties": { "name": 
+"Ставропольский край","Akt_z": "731,2", "Cred_one": "1,8", "Dol_z": "56,5", "Sum_d": "166,9", "Dol_d": "52,7", "Dol_b": "1,4", "Dol_pr_cr": "13,7", "Akt_z_dot": "731.2", "Cred_one_dot": "1.8", "Dol_z_dot": "56.5", "Sum_d_dot": "166.9", "Dol_d_dot": "52.7", "Dol_b_dot": "1.4", "Dol_pr_cr_dot": "13.7"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["47.960776", "56.438457"] },
+"properties": { "name": 
+"Марий Эл","Akt_z": "153,1", "Cred_one": "1,5", "Dol_z": "45,1", "Sum_d": "128", "Dol_d": "52,6", "Dol_b": "0,8", "Dol_pr_cr": "13,9", "Akt_z_dot": "153.1", "Cred_one_dot": "1.5", "Dol_z_dot": "45.1", "Sum_d_dot": "128", "Dol_d_dot": "52.6", "Dol_b_dot": "0.8", "Dol_pr_cr_dot": "13.9"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["65.118097", "55.448155"] },
+"properties": { "name": 
+"Курганская область","Akt_z": "301,1", "Cred_one": "1,7", "Dol_z": "77,2", "Sum_d": "156,6", "Dol_d": "52,6", "Dol_b": "0,9", "Dol_pr_cr": "12,1", "Akt_z_dot": "301.1", "Cred_one_dot": "1.7", "Dol_z_dot": "77.2", "Sum_d_dot": "156.6", "Dol_d_dot": "52.6", "Dol_b_dot": "0.9", "Dol_pr_cr_dot": "12.1"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["40.4859054", "47.3301721"] },
+"properties": { "name": 
+"Ростовская область","Akt_z": "1167,3", "Cred_one": "1,7", "Dol_z": "57,4", "Sum_d": "159,6", "Dol_d": "52", "Dol_b": "1,5", "Dol_pr_cr": "15", "Akt_z_dot": "1167.3", "Cred_one_dot": "1.7", "Dol_z_dot": "57.4", "Sum_d_dot": "159.6", "Dol_d_dot": "52", "Dol_b_dot": "1.5", "Dol_pr_cr_dot": "15"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["46.928354", "55.559599"] },
+"properties": { "name": 
+"Чувашия","Akt_z": "278,9", "Cred_one": "1,5", "Dol_z": "44,5", "Sum_d": "138,9", "Dol_d": "51,9", "Dol_b": "0,9", "Dol_pr_cr": "11,2", "Akt_z_dot": "278.9", "Cred_one_dot": "1.5", "Dol_z_dot": "44.5", "Sum_d_dot": "138.9", "Dol_d_dot": "51.9", "Dol_b_dot": "0.9", "Dol_pr_cr_dot": "11.2"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["45", "49.760452"] },
+"properties": { "name": 
+"Волгоградская область","Akt_z": "707,1", "Cred_one": "1,7", "Dol_z": "57,4", "Sum_d": "159,4", "Dol_d": "51,7", "Dol_b": "1,4", "Dol_pr_cr": "14,9", "Akt_z_dot": "707.1", "Cred_one_dot": "1.7", "Dol_z_dot": "57.4", "Sum_d_dot": "159.4", "Dol_d_dot": "51.7", "Dol_b_dot": "1.4", "Dol_pr_cr_dot": "14.9"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["87.0556640625", "50.75035931136963"] },
+"properties": { "name": 
+"Алтай","Akt_z": "81", "Cred_one": "2,1", "Dol_z": "91,1", "Sum_d": "149,5", "Dol_d": "51,6", "Dol_b": "0,6", "Dol_pr_cr": "11,3", "Akt_z_dot": "81", "Cred_one_dot": "2.1", "Dol_z_dot": "91.1", "Sum_d_dot": "149.5", "Dol_d_dot": "51.6", "Dol_b_dot": "0.6", "Dol_pr_cr_dot": "11.3"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["29.094009", "56.77086"] },
+"properties": { "name": 
+"Псковская область","Akt_z": "205,1", "Cred_one": "1,6", "Dol_z": "65,9", "Sum_d": "139,3", "Dol_d": "51,2", "Dol_b": "1,1", "Dol_pr_cr": "11", "Akt_z_dot": "205.1", "Cred_one_dot": "1.6", "Dol_z_dot": "65.9", "Sum_d_dot": "139.3", "Dol_d_dot": "51.2", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "11"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["32.667738", "54.988299"] },
+"properties": { "name": 
+"Смоленская область","Akt_z": "262,6", "Cred_one": "1,6", "Dol_z": "52,9", "Sum_d": "167,5", "Dol_d": "50,8", "Dol_b": "1,1", "Dol_pr_cr": "11,5", "Akt_z_dot": "262.6", "Cred_one_dot": "1.6", "Dol_z_dot": "52.9", "Sum_d_dot": "167.5", "Dol_d_dot": "50.8", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "11.5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["116.967656", "53.092877"] },
+"properties": { "name": 
+"Забайкальский край","Akt_z": "331", "Cred_one": "1,7", "Dol_z": "68,9", "Sum_d": "189,1", "Dol_d": "50,4", "Dol_b": "1,5", "Dol_pr_cr": "13,9", "Akt_z_dot": "331", "Cred_one_dot": "1.7", "Dol_z_dot": "68.9", "Sum_d_dot": "189.1", "Dol_d_dot": "50.4", "Dol_b_dot": "1.5", "Dol_pr_cr_dot": "13.9"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["44.287097", "43.04513"] },
+"properties": { "name": 
+"Северная Осетия","Akt_z": "149,9", "Cred_one": "1,6", "Dol_z": "51,7", "Sum_d": "142,5", "Dol_d": "50,4", "Dol_b": "0,9", "Dol_pr_cr": "13,5", "Akt_z_dot": "149.9", "Cred_one_dot": "1.6", "Dol_z_dot": "51.7", "Sum_d_dot": "142.5", "Dol_d_dot": "50.4", "Dol_b_dot": "0.9", "Dol_pr_cr_dot": "13.5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["50.209725", "58.419853"] },
+"properties": { "name": 
+"Кировская область","Akt_z": "329,9", "Cred_one": "1,5", "Dol_z": "51,5", "Sum_d": "143,5", "Dol_d": "50,3", "Dol_b": "0,9", "Dol_pr_cr": "11,9", "Akt_z_dot": "329.9", "Cred_one_dot": "1.5", "Dol_z_dot": "51.5", "Sum_d_dot": "143.5", "Dol_d_dot": "50.3", "Dol_b_dot": "0.9", "Dol_pr_cr_dot": "11.9"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["44.094005", "53.141211"] },
+"properties": { "name": 
+"Пензенская область","Akt_z": "355,8", "Cred_one": "1,7", "Dol_z": "54", "Sum_d": "167,6", "Dol_d": "49,8", "Dol_b": "1", "Dol_pr_cr": "11,6", "Akt_z_dot": "355.8", "Cred_one_dot": "1.7", "Dol_z_dot": "54", "Sum_d_dot": "167.6", "Dol_d_dot": "49.8", "Dol_b_dot": "1", "Dol_pr_cr_dot": "11.6"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["46.75394", "51.836926"] },
+"properties": { "name": 
+"Саратовская область","Akt_z": "721,8", "Cred_one": "1,7", "Dol_z": "60,6", "Sum_d": "154,2", "Dol_d": "48,9", "Dol_b": "1,1", "Dol_pr_cr": "14,6", "Akt_z_dot": "721.8", "Cred_one_dot": "1.7", "Dol_z_dot": "60.6", "Sum_d_dot": "154.2", "Dol_d_dot": "48.9", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "14.6"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["90.398215", "53.045228"] },
+"properties": { "name": 
+"Хакасия","Akt_z": "123,3", "Cred_one": "1,7", "Dol_z": "51,5", "Sum_d": "159,8", "Dol_d": "48,4", "Dol_b": "1,4", "Dol_pr_cr": "19,3", "Akt_z_dot": "123.3", "Cred_one_dot": "1.7", "Dol_z_dot": "51.5", "Sum_d_dot": "159.8", "Dol_d_dot": "48.4", "Dol_b_dot": "1.4", "Dol_pr_cr_dot": "19.3"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["112.406053", "54.833115"] },
+"properties": { "name": 
+"Бурятия","Akt_z": "318,4", "Cred_one": "1,8", "Dol_z": "78,5", "Sum_d": "188,4", "Dol_d": "48,4", "Dol_b": "1,8", "Dol_pr_cr": "19,1", "Akt_z_dot": "318.4", "Cred_one_dot": "1.8", "Dol_z_dot": "78.5", "Sum_d_dot": "188.4", "Dol_d_dot": "48.4", "Dol_b_dot": "1.8", "Dol_pr_cr_dot": "19.1"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["39.864438", "50.858971"] },
+"properties": { "name": 
+"Воронежская область","Akt_z": "597,2", "Cred_one": "1,7", "Dol_z": "53,9", "Sum_d": "166,8", "Dol_d": "48,3", "Dol_b": "1,1", "Dol_pr_cr": "11,8", "Akt_z_dot": "597.2", "Cred_one_dot": "1.7", "Dol_z_dot": "53.9", "Sum_d_dot": "166.8", "Dol_d_dot": "48.3", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "11.8"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["87.405529", "54.757465"] },
+"properties": { "name": 
+"Кемеровская область","Akt_z": "930,9", "Cred_one": "1,9", "Dol_z": "73,6", "Sum_d": "153,4", "Dol_d": "47,9", "Dol_b": "1", "Dol_pr_cr": "16", "Akt_z_dot": "930.9", "Cred_one_dot": "1.9", "Dol_z_dot": "73.6", "Sum_d_dot": "153.4", "Dol_d_dot": "47.9", "Dol_b_dot": "1", "Dol_pr_cr_dot": "16"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["21.481616", "54.823529"] },
+"properties": { "name": 
+"Калининградская область","Akt_z": "275,6", "Cred_one": "1,7", "Dol_z": "54,6", "Sum_d": "168,3", "Dol_d": "47,7", "Dol_b": "1,1", "Dol_pr_cr": "13,9", "Akt_z_dot": "275.6", "Cred_one_dot": "1.7", "Dol_z_dot": "54.6", "Sum_d_dot": "168.3", "Dol_d_dot": "47.7", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "13.9"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["38.838863", "57.899152"] },
+"properties": { "name": 
+"Ярославская область","Akt_z": "392,2", "Cred_one": "1,7", "Dol_z": "59,3", "Sum_d": "160,8", "Dol_d": "47,4", "Dol_b": "1,8", "Dol_pr_cr": "13,4", "Akt_z_dot": "392.2", "Cred_one_dot": "1.7", "Dol_z_dot": "59.3", "Sum_d_dot": "160.8", "Dol_d_dot": "47.4", "Dol_b_dot": "1.8", "Dol_pr_cr_dot": "13.4"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["73.316734", "55.055467"] },
+"properties": { "name": 
+"Омская область","Akt_z": "644,2", "Cred_one": "1,9", "Dol_z": "67", "Sum_d": "160,8", "Dol_d": "47,3", "Dol_b": "0,9", "Dol_pr_cr": "14,5", "Akt_z_dot": "644.2", "Cred_one_dot": "1.9", "Dol_z_dot": "67", "Sum_d_dot": "160.8", "Dol_d_dot": "47.3", "Dol_b_dot": "0.9", "Dol_pr_cr_dot": "14.5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["35.381181", "51.763403"] },
+"properties": { "name": 
+"Курская область","Akt_z": "349,9", "Cred_one": "1,7", "Dol_z": "63,9", "Sum_d": "148,4", "Dol_d": "47,3", "Dol_b": "0,6", "Dol_pr_cr": "9,7", "Akt_z_dot": "349.9", "Cred_one_dot": "1.7", "Dol_z_dot": "63.9", "Sum_d_dot": "148.4", "Dol_d_dot": "47.3", "Dol_b_dot": "0.6", "Dol_pr_cr_dot": "9.7"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["48.061011", "46.132117"] },
+"properties": { "name": 
+"Астраханская область","Akt_z": "315,1", "Cred_one": "1,8", "Dol_z": "64,8", "Sum_d": "169,8", "Dol_d": "46,7", "Dol_b": "2", "Dol_pr_cr": "16,4", "Akt_z_dot": "315.1", "Cred_one_dot": "1.8", "Dol_z_dot": "64.8", "Sum_d_dot": "169.8", "Dol_d_dot": "46.7", "Dol_b_dot": "2", "Dol_pr_cr_dot": "16.4"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["33.985314", "57.002165"] },
+"properties": { "name": 
+"Тверская область","Akt_z": "361,1", "Cred_one": "1,6", "Dol_z": "54,3", "Sum_d": "170,6", "Dol_d": "46,6", "Dol_b": "1", "Dol_pr_cr": "10,9", "Akt_z_dot": "361.1", "Cred_one_dot": "1.6", "Dol_z_dot": "54.3", "Sum_d_dot": "170.6", "Dol_d_dot": "46.6", "Dol_b_dot": "1", "Dol_pr_cr_dot": "10.9"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["103.948625", "56.132142"] },
+"properties": { "name": 
+"Иркутская область","Akt_z": "842,9", "Cred_one": "1,8", "Dol_z": "73,3", "Sum_d": "196,2", "Dol_d": "45,3", "Dol_b": "1,3", "Dol_pr_cr": "16,1", "Akt_z_dot": "842.9", "Cred_one_dot": "1.8", "Dol_z_dot": "73.3", "Sum_d_dot": "196.2", "Dol_d_dot": "45.3", "Dol_b_dot": "1.3", "Dol_pr_cr_dot": "16.1"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["35.188909", "54.387267"] },
+"properties": { "name": 
+"Калужская область","Akt_z": "302,3", "Cred_one": "1,7", "Dol_z": "58", "Sum_d": "193,1", "Dol_d": "45,3", "Dol_b": "1,1", "Dol_pr_cr": "10,4", "Akt_z_dot": "302.3", "Cred_one_dot": "1.7", "Dol_z_dot": "58", "Sum_d_dot": "193.1", "Dol_d_dot": "45.3", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "10.4"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["44.029677", "55.799516"] },
+"properties": { "name": 
+"Нижегородская область","Akt_z": "815,3", "Cred_one": "1,6", "Dol_z": "48,4", "Sum_d": "158,6", "Dol_d": "45,2", "Dol_b": "1,2", "Dol_pr_cr": "14,1", "Akt_z_dot": "815.3", "Cred_one_dot": "1.6", "Dol_z_dot": "48.4", "Sum_d_dot": "158.6", "Dol_d_dot": "45.2", "Dol_b_dot": "1.2", "Dol_pr_cr_dot": "14.1"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["61.931623", "59.007735"] },
+"properties": { "name": 
+"Свердловская область","Akt_z": "1370,6", "Cred_one": "1,7", "Dol_z": "65,1", "Sum_d": "204,3", "Dol_d": "44,8", "Dol_b": "1,5", "Dol_pr_cr": "13,6", "Akt_z_dot": "1370.6", "Cred_one_dot": "1.7", "Dol_z_dot": "65.1", "Sum_d_dot": "204.3", "Dol_d_dot": "44.8", "Dol_b_dot": "1.5", "Dol_pr_cr_dot": "13.6"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["60.878896", "54.431942"] },
+"properties": { "name": 
+"Челябинская область","Akt_z": "1094,9", "Cred_one": "1,7", "Dol_z": "63,3", "Sum_d": "186,8", "Dol_d": "44,5", "Dol_b": "1,3", "Dol_pr_cr": "16,2", "Akt_z_dot": "1094.9", "Cred_one_dot": "1.7", "Dol_z_dot": "63.3", "Sum_d_dot": "186.8", "Dol_d_dot": "44.5", "Dol_b_dot": "1.3", "Dol_pr_cr_dot": "16.2"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["37.564951", "54.163768"] },
+"properties": { "name": 
+"Тульская область","Akt_z": "452,4", "Cred_one": "1,7", "Dol_z": "58,2", "Sum_d": "157,3", "Dol_d": "44,3", "Dol_b": "1,1", "Dol_pr_cr": "9,9", "Akt_z_dot": "452.4", "Cred_one_dot": "1.7", "Dol_z_dot": "58.2", "Sum_d_dot": "157.3", "Dol_d_dot": "44.3", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "9.9"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["47.776243", "53.979336"] },
+"properties": { "name": 
+"Ульяновская область","Akt_z": "409,4", "Cred_one": "1,7", "Dol_z": "65,2", "Sum_d": "157", "Dol_d": "44,1", "Dol_b": "1", "Dol_pr_cr": "13", "Akt_z_dot": "409.4", "Cred_one_dot": "1.7", "Dol_z_dot": "65.2", "Sum_d_dot": "157", "Dol_d_dot": "44.1", "Dol_b_dot": "1", "Dol_pr_cr_dot": "13"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["50.472553", "53.418384"] },
+"properties": { "name": 
+"Самарская область","Akt_z": "944,8", "Cred_one": "1,7", "Dol_z": "55,7", "Sum_d": "172,2", "Dol_d": "44,1", "Dol_b": "1,2", "Dol_pr_cr": "14,6", "Akt_z_dot": "944.8", "Cred_one_dot": "1.7", "Dol_z_dot": "55.7", "Sum_d_dot": "172.2", "Dol_d_dot": "44.1", "Dol_b_dot": "1.2", "Dol_pr_cr_dot": "14.6"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["135", "45.052564"] },
+"properties": { "name": 
+"Приморский край","Akt_z": "489,2", "Cred_one": "1,7", "Dol_z": "50,3", "Sum_d": "183,3", "Dol_d": "44", "Dol_b": "1,4", "Dol_pr_cr": "12,8", "Akt_z_dot": "489.2", "Cred_one_dot": "1.7", "Dol_z_dot": "50.3", "Sum_d_dot": "183.3", "Dol_d_dot": "44", "Dol_b_dot": "1.4", "Dol_pr_cr_dot": "12.8"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["80.104392", "55.446713"] },
+"properties": { "name": 
+"Новосибирская область","Akt_z": "908", "Cred_one": "1,9", "Dol_z": "67,2", "Sum_d": "195", "Dol_d": "44", "Dol_b": "1,2", "Dol_pr_cr": "15,1", "Akt_z_dot": "908", "Cred_one_dot": "1.9", "Dol_z_dot": "67.2", "Sum_d_dot": "195", "Dol_d_dot": "44", "Dol_b_dot": "1.2", "Dol_pr_cr_dot": "15.1"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["41.259566", "54.387596"] },
+"properties": { "name": 
+"Рязанская область","Akt_z": "338,9", "Cred_one": "1,7", "Dol_z": "67,4", "Sum_d": "176,4", "Dol_d": "43,6", "Dol_b": "1,5", "Dol_pr_cr": "10,7", "Akt_z_dot": "338.9", "Cred_one_dot": "1.7", "Dol_z_dot": "67.4", "Sum_d_dot": "176.4", "Dol_d_dot": "43.6", "Dol_b_dot": "1.5", "Dol_pr_cr_dot": "10.7"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["40.655541", "59.870671"] },
+"properties": { "name": 
+"Вологодская область","Akt_z": "375,1", "Cred_one": "1,7", "Dol_z": "66,9", "Sum_d": "160,4", "Dol_d": "43,5", "Dol_b": "1,1", "Dol_pr_cr": "14", "Akt_z_dot": "375.1", "Cred_one_dot": "1.7", "Dol_z_dot": "66.9", "Sum_d_dot": "160.4", "Dol_d_dot": "43.5", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "14"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["39.203227", "52.52647"] },
+"properties": { "name": 
+"Липецкая область","Akt_z": "321", "Cred_one": "1,8", "Dol_z": "56,9", "Sum_d": "157,4", "Dol_d": "43,1", "Dol_b": "1", "Dol_pr_cr": "13", "Akt_z_dot": "321", "Cred_one_dot": "1.8", "Dol_z_dot": "56.9", "Sum_d_dot": "157.4", "Dol_d_dot": "43.1", "Dol_b_dot": "1", "Dol_pr_cr_dot": "13"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["56.587248", "58.823193"] },
+"properties": { "name": 
+"Пермский край","Akt_z": "898,6", "Cred_one": "1,7", "Dol_z": "73,4", "Sum_d": "183,9", "Dol_d": "42,6", "Dol_b": "1,1", "Dol_pr_cr": "13,9", "Akt_z_dot": "898.6", "Cred_one_dot": "1.7", "Dol_z_dot": "73.4", "Sum_d_dot": "183.9", "Dol_d_dot": "42.6", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "13.9"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["54.618819", "51.763403"] },
+"properties": { "name": 
+"Оренбургская область","Akt_z": "680,8", "Cred_one": "1,8", "Dol_z": "70,8", "Sum_d": "164,8", "Dol_d": "42,3", "Dol_b": "1", "Dol_pr_cr": "15,9", "Akt_z_dot": "680.8", "Cred_one_dot": "1.8", "Dol_z_dot": "70.8", "Sum_d_dot": "164.8", "Dol_d_dot": "42.3", "Dol_b_dot": "1", "Dol_pr_cr_dot": "15.9"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["44.068397", "54.236944"] },
+"properties": { "name": 
+"Мордовия","Akt_z": "165,6", "Cred_one": "1,5", "Dol_z": "38,8", "Sum_d": "139,7", "Dol_d": "42,3", "Dol_b": "0,8", "Dol_pr_cr": "12,5", "Akt_z_dot": "165.6", "Cred_one_dot": "1.5", "Dol_z_dot": "38.8", "Sum_d_dot": "139.7", "Dol_d_dot": "42.3", "Dol_b_dot": "0.8", "Dol_pr_cr_dot": "12.5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["38.291765", "55.340396"] },
+"properties": { "name": 
+"Московская область","Akt_z": "2388,8", "Cred_one": "1,7", "Dol_z": "63,2", "Sum_d": "330,4", "Dol_d": "41,7", "Dol_b": "2,1", "Dol_pr_cr": "11,5", "Akt_z_dot": "2388.8", "Cred_one_dot": "1.7", "Dol_z_dot": "63.2", "Sum_d_dot": "330.4", "Dol_d_dot": "41.7", "Dol_b_dot": "2.1", "Dol_pr_cr_dot": "11.5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["53.027795", "57.067022"] },
+"properties": { "name": 
+"Удмуртия","Akt_z": "537,1", "Cred_one": "1,8", "Dol_z": "70,6", "Sum_d": "162", "Dol_d": "41,3", "Dol_b": "0,8", "Dol_pr_cr": "9,4", "Akt_z_dot": "537.1", "Cred_one_dot": "1.8", "Dol_z_dot": "70.6", "Sum_d_dot": "162", "Dol_d_dot": "41.3", "Dol_b_dot": "0.8", "Dol_pr_cr_dot": "9.4"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["153.914991", "62.664342"] },
+"properties": { "name": 
+"Магаданская область","Akt_z": "48,7", "Cred_one": "2", "Dol_z": "53,7", "Sum_d": "455,3", "Dol_d": "41,3", "Dol_b": "1,9", "Dol_pr_cr": "6,1", "Akt_z_dot": "48.7", "Cred_one_dot": "2", "Dol_z_dot": "53.7", "Sum_d_dot": "455.3", "Dol_d_dot": "41.3", "Dol_b_dot": "1.9", "Dol_pr_cr_dot": "6.1"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["131.765737", "48.480815"] },
+"properties": { "name": 
+"Еврейская АО","Akt_z": "48,1", "Cred_one": "1,8", "Dol_z": "60,8", "Sum_d": "204,2", "Dol_d": "41", "Dol_b": "0,8", "Dol_pr_cr": "10,2", "Akt_z_dot": "48.1", "Cred_one_dot": "1.8", "Dol_z_dot": "60.8", "Sum_d_dot": "204.2", "Dol_d_dot": "41", "Dol_b_dot": "0.8", "Dol_pr_cr_dot": "10.2"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["127.480172", "54.603506"] },
+"properties": { "name": 
+"Амурская область","Akt_z": "255,2", "Cred_one": "1,8", "Dol_z": "65", "Sum_d": "217", "Dol_d": "41", "Dol_b": "1,6", "Dol_pr_cr": "11,2", "Akt_z_dot": "255.2", "Cred_one_dot": "1.8", "Dol_z_dot": "65", "Sum_d_dot": "217", "Dol_d_dot": "41", "Dol_b_dot": "1.6", "Dol_pr_cr_dot": "11.2"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["95.110418", "64.247976"] },
+"properties": { "name": 
+"Красноярский край","Akt_z": "722,7", "Cred_one": "1,6", "Dol_z": "51,4", "Sum_d": "183,1", "Dol_d": "40,8", "Dol_b": "1,8", "Dol_pr_cr": "20,1", "Akt_z_dot": "722.7", "Cred_one_dot": "1.6", "Dol_z_dot": "51.4", "Sum_d_dot": "183.1", "Dol_d_dot": "40.8", "Dol_b_dot": "1.8", "Dol_pr_cr_dot": "20.1"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["32.566519", "58.242755"] },
+"properties": { "name": 
+"Новгородская область","Akt_z": "163,7", "Cred_one": "1,6", "Dol_z": "53,5", "Sum_d": "173,5", "Dol_d": "40,7", "Dol_b": "0,9", "Dol_pr_cr": "9,7", "Akt_z_dot": "163.7", "Cred_one_dot": "1.6", "Dol_z_dot": "53.5", "Sum_d_dot": "173.5", "Dol_d_dot": "40.7", "Dol_b_dot": "0.9", "Dol_pr_cr_dot": "9.7"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["66.948278", "56.963439"] },
+"properties": { "name": 
+"Тюменская область","Akt_z": "453", "Cred_one": "1,8", "Dol_z": "68,4", "Sum_d": "221,1", "Dol_d": "40,6", "Dol_b": "1,4", "Dol_pr_cr": "13,2", "Akt_z_dot": "453", "Cred_one_dot": "1.8", "Dol_z_dot": "68.4", "Sum_d_dot": "221.1", "Dol_d_dot": "40.6", "Dol_b_dot": "1.4", "Dol_pr_cr_dot": "13.2"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["45.718747", "43.40233"] },
+"properties": { "name": 
+"Чечня","Akt_z": "90,5", "Cred_one": "1,3", "Dol_z": "17,5", "Sum_d": "158,3", "Dol_d": "40,6", "Dol_b": "0,8", "Dol_pr_cr": "9,6", "Akt_z_dot": "90.5", "Cred_one_dot": "1.3", "Dol_z_dot": "17.5", "Sum_d_dot": "158.3", "Dol_d_dot": "40.6", "Dol_b_dot": "0.8", "Dol_pr_cr_dot": "9.6"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["31.892664", "60.079321"] },
+"properties": { "name": 
+"Ленинградская область","Akt_z": "417,5", "Cred_one": "1,6", "Dol_z": "45,8", "Sum_d": "196,4", "Dol_d": "40", "Dol_b": "1,3", "Dol_pr_cr": "11,5", "Akt_z_dot": "417.5", "Cred_one_dot": "1.6", "Dol_z_dot": "45.8", "Sum_d_dot": "196.4", "Dol_d_dot": "40", "Dol_b_dot": "1.3", "Dol_pr_cr_dot": "11.5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["32.990555", "63.15587"] },
+"properties": { "name": 
+"Карелия","Akt_z": "221,8", "Cred_one": "1,8", "Dol_z": "74,2", "Sum_d": "186,7", "Dol_d": "39,9", "Dol_b": "1", "Dol_pr_cr": "11", "Akt_z_dot": "221.8", "Cred_one_dot": "1.8", "Dol_z_dot": "74.2", "Sum_d_dot": "186.7", "Dol_d_dot": "39.9", "Dol_b_dot": "1", "Dol_pr_cr_dot": "11"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["50.726394", "55.180236"] },
+"properties": { "name": 
+"Татарстан","Akt_z": "867,6", "Cred_one": "1,6", "Dol_z": "43,3", "Sum_d": "144,5", "Dol_d": "39,7", "Dol_b": "1,1", "Dol_pr_cr": "16,5", "Akt_z_dot": "867.6", "Cred_one_dot": "1.6", "Dol_z_dot": "43.3", "Sum_d_dot": "144.5", "Dol_d_dot": "39.7", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "16.5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["55.9684711", "54.8995971"] },
+"properties": { "name": 
+"Башкортостан","Akt_z": "1305,1", "Cred_one": "1,7", "Dol_z": "68,8", "Sum_d": "167,9", "Dol_d": "39,2", "Dol_b": "1,3", "Dol_pr_cr": "13,5", "Akt_z_dot": "1305.1", "Cred_one_dot": "1.7", "Dol_z_dot": "68.8", "Sum_d_dot": "167.9", "Dol_d_dot": "39.2", "Dol_b_dot": "1.3", "Dol_pr_cr_dot": "13.5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["37.753338", "50.710693"] },
+"properties": { "name": 
+"Белгородская область","Akt_z": "468,2", "Cred_one": "1,7", "Dol_z": "59,8", "Sum_d": "143", "Dol_d": "39,2", "Dol_b": "0,9", "Dol_pr_cr": "10,5", "Akt_z_dot": "468.2", "Cred_one_dot": "1.7", "Dol_z_dot": "59.8", "Sum_d_dot": "143", "Dol_d_dot": "39.2", "Dol_b_dot": "0.9", "Dol_pr_cr_dot": "10.5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["135", "50.588843"] },
+"properties": { "name": 
+"Хабаровский край","Akt_z": "392,1", "Cred_one": "1,7", "Dol_z": "57,7", "Sum_d": "213,7", "Dol_d": "38,2", "Dol_b": "1,6", "Dol_pr_cr": "14", "Akt_z_dot": "392.1", "Cred_one_dot": "1.7", "Dol_z_dot": "57.7", "Sum_d_dot": "213.7", "Dol_d_dot": "38.2", "Dol_b_dot": "1.6", "Dol_pr_cr_dot": "14"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["41.421645", "52.641659"] },
+"properties": { "name": 
+"Тамбовская область","Akt_z": "283,4", "Cred_one": "1,7", "Dol_z": "56,4", "Sum_d": "148,6", "Dol_d": "36,9", "Dol_b": "0,8", "Dol_pr_cr": "11,9", "Akt_z_dot": "283.4", "Cred_one_dot": "1.7", "Dol_z_dot": "56.4", "Sum_d_dot": "148.6", "Dol_d_dot": "36.9", "Dol_b_dot": "0.8", "Dol_pr_cr_dot": "11.9"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["44.8203", "43.40517"] },
+"properties": { "name": 
+"Ингушетия","Akt_z": "24,1", "Cred_one": "1,2", "Dol_z": "15,6", "Sum_d": "214,9", "Dol_d": "36,7", "Dol_b": "2,7", "Dol_pr_cr": "35", "Akt_z_dot": "24.1", "Cred_one_dot": "1.2", "Dol_z_dot": "15.6", "Sum_d_dot": "214.9", "Dol_d_dot": "36.7", "Dol_b_dot": "2.7", "Dol_pr_cr_dot": "35"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["124.123753", "66.761345"] },
+"properties": { "name": 
+"Саха (Якутия)","Akt_z": "273,9", "Cred_one": "2", "Dol_z": "59,8", "Sum_d": "439", "Dol_d": "36,2", "Dol_b": "1,9", "Dol_pr_cr": "9,5", "Akt_z_dot": "273.9", "Cred_one_dot": "2", "Dol_z_dot": "59.8", "Sum_d_dot": "439", "Dol_d_dot": "36.2", "Dol_b_dot": "1.9", "Dol_pr_cr_dot": "9.5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["30.335099", "59.93428"] },
+"properties": { "name": 
+"Санкт-Петербург","Akt_z": "1875,3", "Cred_one": "1,7", "Dol_z": "64,4", "Sum_d": "301,2", "Dol_d": "35,3", "Dol_b": "1,7", "Dol_pr_cr": "8,7", "Akt_z_dot": "1875.3", "Cred_one_dot": "1.7", "Dol_z_dot": "64.4", "Sum_d_dot": "301.2", "Dol_d_dot": "35.3", "Dol_b_dot": "1.7", "Dol_pr_cr_dot": "8.7"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["158.0571429", "54.7772122"] },
+"properties": { "name": 
+"Камчатский край","Akt_z": "82", "Cred_one": "1,8", "Dol_z": "45,9", "Sum_d": "347,8", "Dol_d": "35,1", "Dol_b": "1,5", "Dol_pr_cr": "5,8", "Akt_z_dot": "82", "Cred_one_dot": "1.8", "Dol_z_dot": "45.9", "Sum_d_dot": "347.8", "Dol_d_dot": "35.1", "Dol_b_dot": "1.5", "Dol_pr_cr_dot": "5.8"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["42.588419", "63.28528"] },
+"properties": { "name": 
+"Архангельская область","Akt_z": "374,6", "Cred_one": "1,7", "Dol_z": "69,3", "Sum_d": "179,9", "Dol_d": "34,2", "Dol_b": "1,1", "Dol_pr_cr": "10,8", "Akt_z_dot": "374.6", "Cred_one_dot": "1.7", "Dol_z_dot": "69.3", "Sum_d_dot": "179.9", "Dol_d_dot": "34.2", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "10.8"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["82.67655", "58.896988"] },
+"properties": { "name": 
+"Томская область","Akt_z": "343,3", "Cred_one": "1,8", "Dol_z": "70,1", "Sum_d": "181,9", "Dol_d": "33,9", "Dol_b": "1", "Dol_pr_cr": "12,8", "Akt_z_dot": "343.3", "Cred_one_dot": "1.8", "Dol_z_dot": "70.1", "Sum_d_dot": "181.9", "Dol_d_dot": "33.9", "Dol_b_dot": "1", "Dol_pr_cr_dot": "12.8"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["163.1746163", "66.5309595"] },
+"properties": { "name": 
+"Чукотский АО","Akt_z": "9,6", "Cred_one": "1,9", "Dol_z": "30,6", "Sum_d": "583,9", "Dol_d": "32,4", "Dol_b": "2", "Dol_pr_cr": "5", "Akt_z_dot": "9.6", "Cred_one_dot": "1.9", "Dol_z_dot": "30.6", "Sum_d_dot": "583.9", "Dol_d_dot": "32.4", "Dol_b_dot": "2", "Dol_pr_cr_dot": "5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["35.08841", "67.844267"] },
+"properties": { "name": 
+"Мурманская область","Akt_z": "266,3", "Cred_one": "1,7", "Dol_z": "63,3", "Sum_d": "180,9", "Dol_d": "31,4", "Dol_b": "1,1", "Dol_pr_cr": "10,9", "Akt_z_dot": "266.3", "Cred_one_dot": "1.7", "Dol_z_dot": "63.3", "Sum_d_dot": "180.9", "Dol_d_dot": "31.4", "Dol_b_dot": "1.1", "Dol_pr_cr_dot": "10.9"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["54.831269", "63.863054"] },
+"properties": { "name": 
+"Коми","Akt_z": "335,5", "Cred_one": "1,8", "Dol_z": "76,1", "Sum_d": "205,4", "Dol_d": "30,1", "Dol_b": "0,7", "Dol_pr_cr": "8,9", "Akt_z_dot": "335.5", "Cred_one_dot": "1.8", "Dol_z_dot": "76.1", "Sum_d_dot": "205.4", "Dol_d_dot": "30.1", "Dol_b_dot": "0.7", "Dol_pr_cr_dot": "8.9"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["37.6173", "55.755826"] },
+"properties": { "name": 
+"Москва","Akt_z": "4631,2", "Cred_one": "1,7", "Dol_z": "66", "Sum_d": "333,4", "Dol_d": "28,4", "Dol_b": "2", "Dol_pr_cr": "7,7", "Akt_z_dot": "4631.2", "Cred_one_dot": "1.7", "Dol_z_dot": "66", "Sum_d_dot": "333.4", "Dol_d_dot": "28.4", "Dol_b_dot": "2", "Dol_pr_cr_dot": "7.7"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["143.373813", "49.980785"] },
+"properties": { "name": 
+"Сахалинская область","Akt_z": "136,1", "Cred_one": "1,7", "Dol_z": "52,2", "Sum_d": "224,6", "Dol_d": "22,9", "Dol_b": "1,2", "Dol_pr_cr": "11,6", "Akt_z_dot": "136.1", "Cred_one_dot": "1.7", "Dol_z_dot": "52.2", "Sum_d_dot": "224.6", "Dol_d_dot": "22.9", "Dol_b_dot": "1.2", "Dol_pr_cr_dot": "11.6"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["74.8828125", " 65.25670649344259"] },
+"properties": { "name": 
+"ЯНАО","Akt_z": "163,5", "Cred_one": "1,7", "Dol_z": "52,3", "Sum_d": "321", "Dol_d": "22,5", "Dol_b": "1,8", "Dol_pr_cr": "10,1", "Akt_z_dot": "163.5", "Cred_one_dot": "1.7", "Dol_z_dot": "52.3", "Sum_d_dot": "321", "Dol_d_dot": "22.5", "Dol_b_dot": "1.8", "Dol_pr_cr_dot": "10.1"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["57.633833", "67.607834"] },
+"properties": { "name": 
+"Ненецкий АО","Akt_z": "13,3", "Cred_one": "1,8", "Dol_z": "62,2", "Sum_d": "397,9", "Dol_d": "22,4", "Dol_b": "0,5", "Dol_pr_cr": "6,5", "Akt_z_dot": "13.3", "Cred_one_dot": "1.8", "Dol_z_dot": "62.2", "Sum_d_dot": "397.9", "Dol_d_dot": "22.4", "Dol_b_dot": "0.5", "Dol_pr_cr_dot": "6.5"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": ["70.641006", "62.228706"] },
+"properties": { "name": 
+"ХМАО","Akt_z": "598,4", "Cred_one": "1,8", "Dol_z": "69,1", "Sum_d": "433,6", "Dol_d": "18,9", "Dol_b": "1,8", "Dol_pr_cr": "10,4", "Akt_z_dot": "598.4", "Cred_one_dot": "1.8", "Dol_z_dot": "69.1", "Sum_d_dot": "433.6", "Dol_d_dot": "18.9", "Dol_b_dot": "1.8", "Dol_pr_cr_dot": "10.4"
+}
+}]}
