@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Кредитная карта России — 2015</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+
+</style>
+</head>
+<body>
+
+<style>
+  #header {
+  	font-family:"Arial", "Helvetica", sans-serif;
+  	position: absolute;
+    left:50px;
+    width:500px;
+  z-index:1;
+  	font-size: 28px;
+  	z-index: 1000;
+  	top: 10px;
+  	color: #333;
+  	text-align: left;
+  	padding: 30px; 
+  	background: rgba(255,255,255,0.8);
+  }
+
+    #header2 {
+    font-family:"Arial", "Helvetica", sans-serif;
+    font-weight:bold;
+        font-size: 13px;
+    z-index: 900;
+    color: #333;
+    padding: 20px 0 0 0; 
+    text-align: left;
+  }
+
+  .sou-ui {
+    	font-family:"Arial", "Helvetica", sans-serif;
+    	font-size:11px;
+    color:#404040;
+  position:absolute;
+  bottom:10px;left:10px;
+  z-index:10;
+  padding:10px; 
+  background: rgba(255,255,255,0.8);
+}
+  .sou-ui a {
+  	text-decoration:none;
+  }
+
+
+</style>
+
+<div id='header'>Кредитная карта России — 2015<div id='header2'>Средняя доля доходов заемщика, направляемых на погашение кредита, %</div></div>
+<nav id='sou-ui' class='sou-ui'><a href="http://www.rbc.ru/" target="_blanc">© РБК, 2016<a>  Источник: <b>Объединенное кредитное бюро.</b>. Крым и Севастополь не учтены в расчетах, так как данных о них в Бюро недостаточно</nav>
+
+<div id='map'></div>
+
+<script>
+//L.mapbox.accessToken = 'pk.eyJ1Ijoidi1vbC1rb3ZhIiwiYSI6ImNpbGNoOTE0MzAwNmt2c20yb2lwejFxZXEifQ.hPi6KJNgfdSCcK2oiB-sqQ';
+
+    var map = L.map('map').setView([61,92], 4);
+
+//L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    //attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+//}).addTo(map);
+
+var stamenLayer = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
+  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+}).addTo(map);
+
+// create rectangle
+L.rectangle([
+  [-20000, -20000],
+  [20000, 20000]], {stroke: false, fillColor: "#fff", fillOpacity: 0.5}
+  ).addTo(map);
+ 
+    // get color depending on Dol_d
+    function getColor(d) {
+      return d > 70 ? '#49000a' :
+             d > 60  ? '#720010' :
+             d > 50  ? '#8b0013' :
+             d > 40  ? '#E31A1C' :
+             d > 30  ? '#FC4E2A' :
+             d > 20   ? '#FD8D3C' :
+             d > 10   ? '#fa9943' :
+             d > 0   ? '#feb376' :
+                        '#c4c4c4';
+    }
+
+var featureLayer9 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "reg_work.geojson", function( data ) {
+
+//L.featureGroup(data).addTo(map);
+L.geoJson(data, {
+    style: function (feature) {
+        return {
+        weight: 1,
+        opacity: 1,
+        color: 'white',
+        //dashArray: '2',
+        fillOpacity: 0.8,
+        fillColor: getColor(feature.properties.Dol_d_dot)
+      };
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3></b><b>Средняя доля доходов заемщика, направляемых на погашение кредита: ' + feature.properties.Dol_d + ' %</b></br></br>Средняя сумма долга на одного заемщика: <b>' + feature.properties.Sum_d + ' тыс. руб.</b></br>Количество активных заемщиков: <b>' + feature.properties.Akt_z + ' тыс. чел.</b></br>Количество кредитов на одного заемщика: <b>' + feature.properties.Cred_one + ' шт.</b></br>Доля заемщиков от экономически активного населения: <b>' + feature.properties.Dol_z + ' %</b></br>Доля потенциальных банкротов от общего количества активных заемщиков региона: <b>' + feature.properties.Dol_b + ' %</b></br>Доля просроченных кредитов на срок от 90 дней и более: <b>' + feature.properties.Dol_pr_cr+ ' %</b></br></br> ');
+    }
+}).addTo(map);
+  
+});
+
+
+</script>
+</body>
+</html>
