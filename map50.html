@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Города рейтинга РБК «50 крупнейших технологических компаний России — 2016»</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+
+</style>
+</head>
+<body>
+
+<style>
+  #header {
+    font-family:"Arial", "Helvetica", sans-serif;
+    position: absolute;
+    left:50px;
+    width:900px;
+  z-index:1;
+    font-size: 22px;
+    font-weight:bold;
+    z-index: 1000;
+    top: 10px;
+    color: #333;
+    text-align: left;
+    padding: 25px; 
+    background: rgba(255,255,255,0.8);
+  }
+
+    #header2 {
+    font-family:"Arial", "Helvetica", sans-serif;
+        font-size: 14px;
+        font-weight:normal;
+    z-index: 900;
+    color: #333;
+    padding: 15px 0 0 0; 
+    text-align: left;
+  }
+
+  .sou-ui {
+    	font-family:"Arial", "Helvetica", sans-serif;
+    	    font-size:11px;
+    color:#404040;
+  position:absolute;
+  bottom:5px;left:10px;
+  z-index:1;
+  }
+  .sou-ui a {
+  	text-decoration:none;
+  }
+
+</style>
+<div id='header'>Города рейтинга РБК «50 крупнейших технологических компаний России — 2016»<div id='header2'>Для переключения параметров «Совокупная средняя выручка» / «Совокупная средняя чистая прибыль»/ «Средняя рентабельность по чистой прибыли» / «Доля в общей выручке» выберите слой в правом верхнем углу карты </div></div>
+<nav id='sou-ui' class='sou-ui'><a href="http://www.rbc.ru/" target="_blanc">© РБК, 2016<a>  Источники: данные компаний, расчеты РБК, «СПАРК-Интерфакс»</nav>
+<div id='map'></div>
+
+<script>
+
+
+    var map = L.map('map').setView([58,55], 4);
+
+
+
+var stamenLayer = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
+  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+}).addTo(map);
+
+// create rectangle
+L.rectangle([
+  [-20000, -20000],
+  [20000, 20000]], {stroke: false, fillColor: "#fff", fillOpacity: 0.8}
+  ).addTo(map);
+ 
+ function getColor(d) {
+      return d > 100  ? '#00411a' :
+             d > 50  ? '#005f26' :
+             d > 25  ? '#00933b' :
+             d > 10  ? '#00a743' :
+             d > 0  ? '#45c87a' :
+             d < 0  ? '#f2001c' :
+                        '#c4c4c4';
+    }
+
+
+var featureLayer2 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "map_50.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+
+    return L.circleMarker(latlng, {
+
+    radius: Math.sqrt(feature.properties.Sov_vyr_d)*3,
+          fillColor: getColor(feature.properties.Sov_vyr_d),
+          stroke: false,
+          fillOpacity: 0.7});
+
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + 'Совокупная средняя выручка: ' + feature.properties.Sov_vyr + ' млрд руб.</b></br>'  + 'Совокупная средняя чистая прибыль (убыток): <b>' + feature.properties.Sov_pr + ' млрд руб.</b></br>' + 'Средняя рентабельность по чистой прибыли (убытку): <b>' + feature.properties.Sredn_rent + ' %</b></br>' + 'Доля в общей выручке: <b>' + feature.properties.Dol_v_obsh + ' %</b></br>');
+    }
+}).addTo(featureLayer2);
+  
+});
+
+
+
+var featureLayer3 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "map_50.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+    radius: Math.sqrt(feature.properties.Sov_pr_d)*17,
+          fillColor: getColor(feature.properties.Sov_pr_dd),
+          stroke: false,
+          fillOpacity: 0.7});
+
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + '</b>Совокупная средняя выручка: <b>' + feature.properties.Sov_vyr + ' млрд руб.</b></br><b>'  + 'Совокупная средняя чистая прибыль (убыток): ' + feature.properties.Sov_pr + ' млрд руб.</b></br>' + 'Средняя рентабельность по чистой прибыли (убытку): <b>' + feature.properties.Sredn_rent + ' %</b></br>' + 'Доля в общей выручке: <b>' + feature.properties.Dol_v_obsh + ' %</b></br>');
+    }
+}).addTo(featureLayer3);
+  
+});
+
+ var featureLayer5 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "map_50.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+    radius: Math.sqrt(feature.properties.Dol_v_obsh_d)*5,
+          fillColor: getColor(feature.properties.Dol_v_obsh_d),
+          stroke: false,
+          fillOpacity: 0.7});
+
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + '</b>Совокупная средняя выручка: <b>' + feature.properties.Sov_vyr + ' млрд руб.</b></br>'  + 'Совокупная средняя чистая прибыль (убыток): <b>' + feature.properties.Sov_pr + ' млрд руб.</b></br>' + 'Средняя рентабельность по чистой прибыли (убытку): <b>' + feature.properties.Sredn_rent + ' %</b></br><b>' + 'Доля в общей выручке: ' + feature.properties.Dol_v_obsh + ' %</b></br>');
+    }
+}).addTo(featureLayer5);
+  
+});
+
+ var featureLayer4 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "map_50.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+    radius: Math.sqrt(feature.properties.Sredn_rent_d)*5,
+          fillColor: getColor(feature.properties.Sredn_rent_dd),
+          stroke: false,
+          fillOpacity: 0.7});
+
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + '</b>Совокупная средняя выручка: <b>' + feature.properties.Sov_vyr + ' млрд руб.</b></br>'  + 'Совокупная средняя чистая прибыль (убыток): <b>' + feature.properties.Sov_pr + ' млрд руб.</b></br><b>' + 'Средняя рентабельность по чистой прибыли (убытку): ' + feature.properties.Sredn_rent + ' %</b></br>' + 'Доля в общей выручке: <b>' + feature.properties.Dol_v_obsh + ' %</b></br>');
+    }
+}).addTo(featureLayer4);
+  
+});
+
+featureLayer2.addTo(map);
+
+
+      var one   = featureLayer2,
+        two  = featureLayer3,
+        onee   = featureLayer4,
+        twoo  = featureLayer5;
+
+    var baseLayers = {
+      "Совокупная средняя выручка, млрд руб.": one,
+      "Совокупная средняя чистая прибыль (убыток), млрд руб.": two,
+      "Средняя рентабельность по чистой прибыли (убытку), %": onee,
+      "Доля в общей выручке, %": twoo
+    };
+
+    L.control.layers(baseLayers).addTo(map);
+
+
+</script>
+</body>
+</html>

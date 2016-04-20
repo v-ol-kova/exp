@@ -1,0 +1,259 @@
+{
+"type": "FeatureCollection",                                                                             
+"features": [
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "37.6173", "55.755826" ] },
+"properties": { "name": 
+"Москва", "Sov_vyr_d": "359.48", "Sov_pr_d": "25.54", "Sredn_rent_d": "7.1", "Dol_v_obsh_d": "34.5", "Sov_vyr": "359,48", "Sov_pr": "25,54", "Sredn_rent": "7,1", "Dol_v_obsh": "34,5", "Sov_pr_dd": "25.54", "Sredn_rent_dd": "7.1"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "49.066081", "55.830431" ] },
+"properties": { "name": 
+"Казань", "Sov_vyr_d": "52.05", "Sov_pr_d": "8.69", "Sredn_rent_d": "16.7", "Dol_v_obsh_d": "5", "Sov_vyr": "52,05", "Sov_pr": "8,69", "Sredn_rent": "16,7", "Dol_v_obsh": "5", "Sov_pr_dd": "8.69", "Sredn_rent_dd": "16.7"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "30.335099", "59.93428" ] },
+"properties": { "name": 
+"Санкт-Петербург", "Sov_vyr_d": "51.4", "Sov_pr_d": "2.09", "Sredn_rent_d": "4.1", "Dol_v_obsh_d": "4.9", "Sov_vyr": "51,4", "Sov_pr": "2,09", "Sredn_rent": "4,1", "Dol_v_obsh": "4,9", "Sov_pr_dd": "2.09", "Sredn_rent_dd": "4.1"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "39.850598", "64.566176" ] },
+"properties": { "name": 
+"Северодвинск", "Sov_vyr_d": "44.69", "Sov_pr_d": "0.93", "Sredn_rent_d": "2.1", "Dol_v_obsh_d": "4.3", "Sov_vyr": "44,69", "Sov_pr": "-0,93", "Sredn_rent": "-2,1", "Dol_v_obsh": "4,3", "Sov_pr_dd": "-0.93", "Sredn_rent_dd": "-2.1"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "55.972055", "54.738762" ] },
+"properties": { "name": 
+"Уфа", "Sov_vyr_d": "40.11", "Sov_pr_d": "1.9", "Sredn_rent_d": "4.7", "Dol_v_obsh_d": "3.9", "Sov_vyr": "40,11", "Sov_pr": "1,9", "Sredn_rent": "4,7", "Dol_v_obsh": "3,9", "Sov_pr_dd": "1.9", "Sredn_rent_dd": "4.7"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "59.981619", "57.921491" ] },
+"properties": { "name": 
+"Нижний Тагил", "Sov_vyr_d": "38.6", "Sov_pr_d": "0.52", "Sredn_rent_d": "1.3", "Dol_v_obsh_d": "3.7", "Sov_vyr": "38,6", "Sov_pr": "0,52", "Sredn_rent": "1,3", "Dol_v_obsh": "3,7", "Sov_pr_dd": "0.52", "Sredn_rent_dd": "1.3"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "48.383791", "54.31816" ] },
+"properties": { "name": 
+"Ульяновск", "Sov_vyr_d": "37.34", "Sov_pr_d": "1.28", "Sredn_rent_d": "3.4", "Dol_v_obsh_d": "3.6", "Sov_vyr": "37,34", "Sov_pr": "1,28", "Sredn_rent": "3,4", "Dol_v_obsh": "3,6", "Sov_pr_dd": "1.28", "Sredn_rent_dd": "3.4"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "39.701505", "47.235714" ] },
+"properties": { "name": 
+"Ростов-на-Дону", "Sov_vyr_d": "32.2", "Sov_pr_d": "2.82", "Sredn_rent_d": "8.8", "Dol_v_obsh_d": "3.1", "Sov_vyr": "32,2", "Sov_pr": "2,82", "Sredn_rent": "8,8", "Dol_v_obsh": "3,1", "Sov_pr_dd": "2.82", "Sredn_rent_dd": "8.8"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "37.851855", "55.93168" ] },
+"properties": { "name": 
+"Королев", "Sov_vyr_d": "30.7", "Sov_pr_d": "0.66", "Sredn_rent_d": "2.1", "Dol_v_obsh_d": "2.9", "Sov_vyr": "30,7", "Sov_pr": "0,66", "Sredn_rent": "2,1", "Dol_v_obsh": "2,9", "Sov_pr_dd": "0.66", "Sredn_rent_dd": "2.1"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "60.605703", "56.838926" ] },
+"properties": { "name": 
+"Екатеринбург", "Sov_vyr_d": "27.7", "Sov_pr_d": "2.11", "Sredn_rent_d": "7.6", "Dol_v_obsh_d": "2.7", "Sov_vyr": "27,7", "Sov_pr": "2,11", "Sredn_rent": "7,6", "Dol_v_obsh": "2,7", "Sov_pr_dd": "2.11", "Sredn_rent_dd": "7.6"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "107.607338", "51.823879" ] },
+"properties": { "name": 
+"Улан-Удэ", "Sov_vyr_d": "27.12", "Sov_pr_d": "6.28", "Sredn_rent_d": "23.2", "Dol_v_obsh_d": "2.6", "Sov_vyr": "27,12", "Sov_pr": "6,28", "Sredn_rent": "23,2", "Dol_v_obsh": "2,6", "Sov_pr_dd": "6.28", "Sredn_rent_dd": "23.2"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "35.917596", "56.858721" ] },
+"properties": { "name": 
+"Тверь", "Sov_vyr_d": "25.8", "Sov_pr_d": "0.44", "Sredn_rent_d": "1.7", "Dol_v_obsh_d": "2.5", "Sov_vyr": "25,8", "Sov_pr": "0,44", "Sredn_rent": "1,7", "Dol_v_obsh": "2,5", "Sov_pr_dd": "0.44", "Sredn_rent_dd": "1.7"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "50.221246", "53.241504" ] },
+"properties": { "name": 
+"Самара", "Sov_vyr_d": "23.52", "Sov_pr_d": "0.13", "Sredn_rent_d": "0.6", "Dol_v_obsh_d": "2.3", "Sov_vyr": "23,52", "Sov_pr": "0,13", "Sredn_rent": "0,6", "Dol_v_obsh": "2,3", "Sov_pr_dd": "0.13", "Sredn_rent_dd": "0.6"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "40.072678", "47.417769" ] },
+"properties": { "name": 
+"Новочеркасск", "Sov_vyr_d": "22.39", "Sov_pr_d": "2.27", "Sredn_rent_d": "10.1", "Dol_v_obsh_d": "2.1", "Sov_vyr": "22,39", "Sov_pr": "2,27", "Sredn_rent": "10,1", "Dol_v_obsh": "2,1", "Sov_pr_dd": "2.27", "Sredn_rent_dd": "10.1"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "37.765499", "55.919847" ] },
+"properties": { "name": 
+"Мытищи", "Sov_vyr_d": "20.52", "Sov_pr_d": "3.16", "Sredn_rent_d": "15.4", "Dol_v_obsh_d": "2", "Sov_vyr": "20,52", "Sov_pr": "3,16", "Sredn_rent": "15,4", "Dol_v_obsh": "2", "Sov_pr_dd": "3.16", "Sredn_rent_dd": "15.4"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "8.515495", "47.166167" ] },
+"properties": { "name": 
+"Цуг (Швейцария)", "Sov_vyr_d": "19.29", "Sov_pr_d": "1.49", "Sredn_rent_d": "7.7", "Dol_v_obsh_d": "1.9", "Sov_vyr": "19,29", "Sov_pr": "1,49", "Sredn_rent": "7,7", "Dol_v_obsh": "1,9", "Sov_pr_dd": "1.49", "Sredn_rent_dd": "7.7"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "36.285097", "54.551858" ] },
+"properties": { "name": 
+"Калуга", "Sov_vyr_d": "17.26", "Sov_pr_d": "0.07", "Sredn_rent_d": "0.4", "Dol_v_obsh_d": "1.7", "Sov_vyr": "17,26", "Sov_pr": "0,07", "Sredn_rent": "0,4", "Dol_v_obsh": "1,7", "Sov_pr_dd": "0.07", "Sredn_rent_dd": "0.4"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "20.452214", "54.710426" ] },
+"properties": { "name": 
+"Калининград", "Sov_vyr_d": "16.48", "Sov_pr_d": "0.23", "Sredn_rent_d": "1.4", "Dol_v_obsh_d": "1.6", "Sov_vyr": "16,48", "Sov_pr": "0,23", "Sredn_rent": "1,4", "Dol_v_obsh": "1,6", "Sov_pr_dd": "0.23", "Sredn_rent_dd": "1.4"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "41.322631", "56.356769" ] },
+"properties": { "name": 
+"Ковров", "Sov_vyr_d": "15.79", "Sov_pr_d": "2.28", "Sredn_rent_d": "14.4", "Dol_v_obsh_d": "1.5", "Sov_vyr": "15,79", "Sov_pr": "2,28", "Sredn_rent": "14,4", "Dol_v_obsh": "1,5", "Sov_pr_dd": "2.28", "Sredn_rent_dd": "14.4"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "37.861302", "55.761758" ] },
+"properties": { "name": 
+"Реутов", "Sov_vyr_d": "15.33", "Sov_pr_d": "1.43", "Sredn_rent_d": "9.3", "Dol_v_obsh_d": "1.5", "Sov_vyr": "15,33", "Sov_pr": "1,43", "Sredn_rent": "9,3", "Dol_v_obsh": "1,5", "Sov_pr_dd": "1.43", "Sredn_rent_dd": "9.3"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "38.768862", "55.093752" ] },
+"properties": { "name": 
+"Коломна", "Sov_vyr_d": "14.89", "Sov_pr_d": "0.89", "Sredn_rent_d": "6", "Dol_v_obsh_d": "1.4", "Sov_vyr": "14,89", "Sov_pr": "0,89", "Sredn_rent": "6", "Dol_v_obsh": "1,4", "Sov_pr_dd": "0.89", "Sredn_rent_dd": "6"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "56.266792", "58.029681" ] },
+"properties": { "name": 
+"Пермь", "Sov_vyr_d": "13.5", "Sov_pr_d": "0.78", "Sredn_rent_d": "5.8", "Dol_v_obsh_d": "1.3", "Sov_vyr": "13,5", "Sov_pr": "0,78", "Sredn_rent": "5,8", "Dol_v_obsh": "1,3", "Sov_pr_dd": "0.78", "Sredn_rent_dd": "5.8"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "34.41611", "53.263531" ] },
+"properties": { "name": 
+"Брянск", "Sov_vyr_d": "13.01", "Sov_pr_d": "0.17", "Sredn_rent_d": "1.3", "Dol_v_obsh_d": "1.2", "Sov_vyr": "13,01", "Sov_pr": "0,17", "Sredn_rent": "1,3", "Dol_v_obsh": "1,2", "Sov_pr_dd": "0.17", "Sredn_rent_dd": "1.3"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "37.499276", "55.947064" ] },
+"properties": { "name": 
+"Долгопрудный", "Sov_vyr_d": "10.32", "Sov_pr_d": "1.32", "Sredn_rent_d": "12.8", "Dol_v_obsh_d": "1", "Sov_vyr": "10,32", "Sov_pr": "1,32", "Sredn_rent": "12,8", "Dol_v_obsh": "1", "Sov_pr_dd": "1.32", "Sredn_rent_dd": "12.8"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "37.545765", "55.431245" ] },
+"properties": { "name": 
+"Подольск", "Sov_vyr_d": "10.07", "Sov_pr_d": "0.13", "Sredn_rent_d": "1.3", "Dol_v_obsh_d": "1", "Sov_vyr": "10,07", "Sov_pr": "0,13", "Sredn_rent": "1,3", "Dol_v_obsh": "1", "Sov_pr_dd": "0.13", "Sredn_rent_dd": "1.3"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "39.712586", "54.609542" ] },
+"properties": { "name": 
+"Рязань", "Sov_vyr_d": "10.15", "Sov_pr_d": "0.83", "Sredn_rent_d": "8.2", "Dol_v_obsh_d": "1", "Sov_vyr": "10,15", "Sov_pr": "0,83", "Sredn_rent": "8,2", "Dol_v_obsh": "1", "Sov_pr_dd": "0.83", "Sredn_rent_dd": "8.2"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "48.537153", "55.851604" ] },
+"properties": { "name": 
+"Зеленодольск", "Sov_vyr_d": "9.51", "Sov_pr_d": "0", "Sredn_rent_d": "0", "Dol_v_obsh_d": "0.9", "Sov_vyr": "9,51", "Sov_pr": "0", "Sredn_rent": "0", "Dol_v_obsh": "0,9", "Sov_pr_dd": "0", "Sredn_rent_dd": "0"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "54.286739", "56.102608" ] },
+"properties": { "name": 
+"Нефтекамск", "Sov_vyr_d": "8.88", "Sov_pr_d": "0.02", "Sredn_rent_d": "0.2", "Dol_v_obsh_d": "0.9", "Sov_vyr": "8,88", "Sov_pr": "0,02", "Sredn_rent": "0,2", "Dol_v_obsh": "0,9", "Sov_pr_dd": "0.02", "Sredn_rent_dd": "0.2"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "37.443949", "55.894055" ] },
+"properties": { "name": 
+"Химки", "Sov_vyr_d": "9.1", "Sov_pr_d": "0.17", "Sredn_rent_d": "1.9", "Dol_v_obsh_d": "0.9", "Sov_vyr": "9,1", "Sov_pr": "0,17", "Sredn_rent": "1,9", "Dol_v_obsh": "0,9", "Sov_pr_dd": "0.17", "Sredn_rent_dd": "1.9"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "53.232428", "56.86186" ] },
+"properties": { "name": 
+"Ижевск", "Sov_vyr_d": "8.7", "Sov_pr_d": "0.96", "Sredn_rent_d": "11", "Dol_v_obsh_d": "0.8", "Sov_vyr": "8,7", "Sov_pr": "0,96", "Sredn_rent": "11", "Dol_v_obsh": "0,8", "Sov_pr_dd": "0.96", "Sredn_rent_dd": "11"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "48.397896", "53.15045" ] },
+"properties": { "name": 
+"Сызрань", "Sov_vyr_d": "8.27", "Sov_pr_d": "0.96", "Sredn_rent_d": "11.6", "Dol_v_obsh_d": "0.8", "Sov_vyr": "8,27", "Sov_pr": "0,96", "Sredn_rent": "11,6", "Dol_v_obsh": "0,8", "Sov_pr_dd": "0.96", "Sredn_rent_dd": "11.6"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "30.578897", "59.761761" ] },
+"properties": { "name": 
+"Колпино", "Sov_vyr_d": "7.64", "Sov_pr_d": "0.07", "Sredn_rent_d": "0.9", "Dol_v_obsh_d": "0.7", "Sov_vyr": "7,64", "Sov_pr": "0,07", "Sredn_rent": "0,9", "Dol_v_obsh": "0,7", "Sov_pr_dd": "0.07", "Sredn_rent_dd": "0.9"
+}
+}
+]}
