@@ -55,12 +55,24 @@
   .sou-ui a {
   	text-decoration:none;
   }
+  
+  .item { line-height: 20px; display: inline-block; height: 20px; font-size: 12px; padding: 4px; color: white; min-width: 40px; text-align: center; }
+#d0 { background: #fbad68; }
+#d20 { background: #ff8025; }
+#d30 { background: #fc7154; }
+#d40 { background: #e84749; }
+#d50 { background: #a23342; }
+#d70 { background: #6d333b; }
 
 
 </style>
 
-<div id='header'>Кредитная карта России — 2015<div id='header2'><b>Цвет региона зависит от доли дохода, которую в среднем тратят заемщики на погашение кредита</b></div></div>
-<nav id='sou-ui' class='sou-ui'><a href="http://www.rbc.ru/" target="_blanc">© РБК, 2016<a>  Источник: <b>Объединенное кредитное бюро.</b>. Крым и Севастополь не учтены в расчетах, так как данных о них в Бюро недостаточно</nav>
+<div id='header'>Кредитная карта России — 2015<div id='header2'>Цвет региона зависит от доли дохода, которую в среднем тратят заемщики</br>на погашение кредита
+</br></br><div id='legend'>
+  <div class='item' id='d0'>&lt;&nbsp;19</div><div class='item' id='d20'>20&nbsp;–&nbsp;29</div><div class='item' id='d30'>30&nbsp;–&nbsp;39</div><div class='item' id='d40'>40&nbsp;–&nbsp;49</div><div class='item' id='d50'>50&nbsp;–&nbsp;59</div><div class='item' id='d70'>&gt;&nbsp;60</div>
+</div>
+</div></div></div>
+<nav id='sou-ui' class='sou-ui'><a href="http://www.rbc.ru/" target="_blanc">© РБК, 2016<a>  Источник: <b>Объединенное кредитное бюро.</b> Крым и Севастополь не учтены в расчетах, так как данных о них в Бюро недостаточно</nav>
 
 <div id='map'></div>
 
@@ -90,7 +102,7 @@ L.rectangle([
              d > 50  ? '#8b0013' :
              d > 40  ? '#E31A1C' :
              d > 30  ? '#FC4E2A' :
-             d > 20   ? '#FD8D3C' :
+             d > 20   ? '#ff8025' :
              d > 10   ? '#fa9943' :
              d > 0   ? '#feb376' :
                         '#fcd9cc';
