@@ -1,0 +1,1030 @@
+{
+"type": "FeatureCollection",                                                                             
+"features": [
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "59.556278", "38.969719" ] },
+"properties": { "name": "Туркмения", "num": "1", "per1000": "712"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "66.923684", "48.019573" ] },
+"properties": { "name": "Казахстан", "num": "2", "per1000": "636"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "103.846656", "46.862496" ] },
+"properties": { "name": "Монголия", "num": "3", "per1000": "587"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "64.585262", "41.377491" ] },
+"properties": { "name": "Узбекистан", "num": "4", "per1000": "578"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "74.766098", "41.20438" ] },
+"properties": { "name": "Киргизия", "num": "5", "per1000": "549"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-58.93018", "4.860416" ] },
+"properties": { "name": "Гайана", "num": "6", "per1000": "545"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "31.16558", "48.379433" ] },
+"properties": { "name": "Украина", "num": "7", "per1000": "536"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "37.646961", "55.725045" ] },
+"properties": { "name": "Российская Федерация", "num": "8", "per1000": "531"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "67.709953", "33.93911" ] },
+"properties": { "name": "Афганистан", "num": "9", "per1000": "512"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "71.276093", "38.861034" ] },
+"properties": { "name": "Таджикистан", "num": "10", "per1000": "510"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "28.369885", "47.411631" ] },
+"properties": { "name": "Молдавия", "num": "11", "per1000": "508"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "45.038189", "40.069099" ] },
+"properties": { "name": "Армения", "num": "12", "per1000": "474"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "27.953389", "53.709807" ] },
+"properties": { "name": "Белоруссия", "num": "13", "per1000": "464"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "30.802498", "26.820553" ] },
+"properties": { "name": "Египет", "num": "14", "per1000": "445"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "47.576927", "40.143105" ] },
+"properties": { "name": "Азербайджан", "num": "15", "per1000": "442"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "20.168331", "41.153332" ] },
+"properties": { "name": "Албания", "num": "16", "per1000": "436"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-11.779889", "8.460555" ] },
+"properties": { "name": "Сьерра-Леоне", "num": "17", "per1000": "436"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "43.356892", "42.315407" ] },
+"properties": { "name": "Грузия", "num": "18", "per1000": "429"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "43.679291", "33.223191" ] },
+"properties": { "name": "Ирак", "num": "19", "per1000": "421"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "25.48583", "42.733883" ] },
+"properties": { "name": "Болгария", "num": "20", "per1000": "406"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "21.745275", "41.608635" ] },
+"properties": { "name": "Бывшая Югославская Республика Македония", "num": "21", "per1000": "406"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "1.659626", "28.033886" ] },
+"properties": { "name": "Алжир", "num": "22", "per1000": "397"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-3.996166", "17.570692" ] },
+"properties": { "name": "Мали", "num": "23", "per1000": "396"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-72.285215", "18.971187" ] },
+"properties": { "name": "Гаити", "num": "24", "per1000": "384"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "121.774017", "12.879721" ] },
+"properties": { "name": "Филиппины", "num": "25", "per1000": "377"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "48.516388", "15.552727" ] },
+"properties": { "name": "Йемен", "num": "26", "per1000": "377"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "38.996815", "34.802075" ] },
+"properties": { "name": "Сирия", "num": "27", "per1000": "376"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "17.873887", "-11.202692" ] },
+"properties": { "name": "Ангола", "num": "28", "per1000": "375"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-1.561593", "12.238333" ] },
+"properties": { "name": "Буркина-Фасо", "num": "29", "per1000": "374"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "2.315834", "9.30769" ] },
+"properties": { "name": "Бенин", "num": "30", "per1000": "373"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "178.065032", "-17.713371" ] },
+"properties": { "name": "Фиджи", "num": "31", "per1000": "372"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-15.180413", "11.803749" ] },
+"properties": { "name": "Гвинея-Бисау", "num": "32", "per1000": "371"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "113.921327", "-0.789275" ] },
+"properties": { "name": "Индонезия", "num": "33", "per1000": "371"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "19.37439", "42.708678" ] },
+"properties": { "name": "Черногория", "num": "34", "per1000": "367"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "24.96676", "45.943161" ] },
+"properties": { "name": "Румыния", "num": "35", "per1000": "364"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "24.603189", "56.879635" ] },
+"properties": { "name": "Латвия", "num": "36", "per1000": "361"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "21.758664", "-4.038333" ] },
+"properties": { "name": "Демократическая Республика Конго", "num": "37", "per1000": "360"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "21.005859", "44.016521" ] },
+"properties": { "name": "Сербия", "num": "38", "per1000": "360"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "10.267895", "1.650801" ] },
+"properties": { "name": "Экваториальная Гвинея", "num": "39", "per1000": "358"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "127.510093", "40.339852" ] },
+"properties": { "name": "Корейская Народно-Демократическая Республика", "num": "40", "per1000": "352"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "46.869107", "-18.766947" ] },
+"properties": { "name": "Мадагаскар", "num": "41", "per1000": "352"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "53.688046", "32.427908" ] },
+"properties": { "name": "Иран ", "num": "42", "per1000": "350"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "125.727539", "-8.874217" ] },
+"properties": { "name": "Восточный Тимор", "num": "43", "per1000": "347"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "102.495496", "19.85627" ] },
+"properties": { "name": "Лаос", "num": "44", "per1000": "346"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-1.023194", "7.946527" ] },
+"properties": { "name": "Гана", "num": "45", "per1000": "341"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "45.079162", "23.885942" ] },
+"properties": { "name": "Саудовская Аравия", "num": "46", "per1000": "338"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "34.301525", "-13.254308" ] },
+"properties": { "name": "Малави", "num": "47", "per1000": "337"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-5.54708", "7.539989" ] },
+"properties": { "name": "Кот-д’Ивуар", "num": "48", "per1000": "336"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "15.827659", "-0.228021" ] },
+"properties": { "name": "Конго", "num": "49", "per1000": "335"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-7.09262", "31.791702" ] },
+"properties": { "name": "Марокко", "num": "50", "per1000": "331"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "44.25", "-12.14" ] },
+"properties": { "name": "Коморские Острова", "num": "51", "per1000": "330"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "39.782334", "15.179384" ] },
+"properties": { "name": "Эритрея", "num": "52", "per1000": "327"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "36.238414", "30.585164" ] },
+"properties": { "name": "Иордания", "num": "53", "per1000": "326"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "24.684866", "-22.328474" ] },
+"properties": { "name": "Ботсвана", "num": "54", "per1000": "324"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "23.881275", "55.169438" ] },
+"properties": { "name": "Литва", "num": "55", "per1000": "323"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "17.228331", "26.3351" ] },
+"properties": { "name": "Ливия", "num": "56", "per1000": "320"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "95.955974", "21.916221" ] },
+"properties": { "name": "Мьянма", "num": "57", "per1000": "318"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "8.081666", "17.607789" ] },
+"properties": { "name": "Нигер", "num": "58", "per1000": "318"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-9.696645", "9.945587" ] },
+"properties": { "name": "Гвинея", "num": "59", "per1000": "313"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "29.918886", "-3.373056" ] },
+"properties": { "name": "Бурунди", "num": "60", "per1000": "312"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "17.679076", "43.915886" ] },
+"properties": { "name": "Босния и Герцеговина", "num": "61", "per1000": "311"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "35.243322", "38.963745" ] },
+"properties": { "name": "Турция", "num": "62", "per1000": "310"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "9.537499", "33.886917" ] },
+"properties": { "name": "Тунис", "num": "63", "per1000": "308"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "18.732207", "15.454166" ] },
+"properties": { "name": "Чад", "num": "64", "per1000": "307"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "28.233608", "-29.609988" ] },
+"properties": { "name": "Лесото", "num": "65", "per1000": "307"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "0.824782", "8.619543" ] },
+"properties": { "name": "Того", "num": "66", "per1000": "307"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "78.96288", "20.593684" ] },
+"properties": { "name": "Индия", "num": "67", "per1000": "306"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "19.699024", "48.669026" ] },
+"properties": { "name": "Словакия", "num": "68", "per1000": "306"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "18.49041", "-22.95764" ] },
+"properties": { "name": "Намибия", "num": "69", "per1000": "303"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "104.195397", "35.86166" ] },
+"properties": { "name": "Китай", "num": "70", "per1000": "300"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-15.310139", "13.443182" ] },
+"properties": { "name": "Гамбия", "num": "71", "per1000": "300"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "22.937506", "-30.559482" ] },
+"properties": { "name": "Южная Африка", "num": "72", "per1000": "298"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "53.847818", "23.424076" ] },
+"properties": { "name": "Объединенные Арабские Эмираты", "num": "73", "per1000": "298"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "101.975766", "4.210484" ] },
+"properties": { "name": "Малайзия", "num": "74", "per1000": "296"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "31.465866", "-26.522503" ] },
+"properties": { "name": "Свазиленд", "num": "75", "per1000": "296"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "19.503304", "47.162494" ] },
+"properties": { "name": "Венгрия", "num": "76", "per1000": "293"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "12.354722", "7.369722" ] },
+"properties": { "name": "Камерун", "num": "77", "per1000": "286"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-61.222503", "10.691803" ] },
+"properties": { "name": "Тринидад и Тобаго", "num": "78", "per1000": "279"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "42.590275", "11.825138" ] },
+"properties": { "name": "Джибути", "num": "79", "per1000": "277"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "69.345116", "30.375321" ] },
+"properties": { "name": "Пакистан", "num": "80", "per1000": "274"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "25.013607", "58.595272" ] },
+"properties": { "name": "Эстония", "num": "81", "per1000": "272"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "27.849332", "-13.133897" ] },
+"properties": { "name": "Замбия", "num": "82", "per1000": "272"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "84.124008", "28.394857" ] },
+"properties": { "name": "Непал", "num": "83", "per1000": "271"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "80.771797", "7.873054" ] },
+"properties": { "name": "Шри-Ланка", "num": "84", "per1000": "271"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-63.588653", "-16.290154" ] },
+"properties": { "name": "Боливия", "num": "85", "per1000": "270"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "8.675277", "9.081999" ] },
+"properties": { "name": "Нигерия", "num": "86", "per1000": "267"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "32.290275", "1.373333" ] },
+"properties": { "name": "Уганда", "num": "87", "per1000": "264"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-10.940835", "21.00789" ] },
+"properties": { "name": "Мавритания", "num": "88", "per1000": "263"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "29.873888", "-1.940278" ] },
+"properties": { "name": "Руанда", "num": "89", "per1000": "262"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "160.156194", "-9.64571" ] },
+"properties": { "name": "Соломоновы Острова", "num": "90", "per1000": "257"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "19.145136", "51.919438" ] },
+"properties": { "name": "Польша", "num": "91", "per1000": "253"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-23.605172", "15.120142" ] },
+"properties": { "name": "Кабо-Верде", "num": "92", "per1000": "250"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "31.306979", "6.876992" ] },
+"properties": { "name": "Южный Судан", "num": "93", "per1000": "250"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-9.429499", "6.428055" ] },
+"properties": { "name": "Либерия", "num": "94", "per1000": "248"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "55.923255", "21.512583" ] },
+"properties": { "name": "Оман", "num": "95", "per1000": "245"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "20.939444", "6.611111" ] },
+"properties": { "name": "Центрально-Африканская Республика", "num": "96", "per1000": "244"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "73.536103", "1.977247" ] },
+"properties": { "name": "Мальдивы", "num": "97", "per1000": "244"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "11.609444", "-0.803689" ] },
+"properties": { "name": "Габон", "num": "98", "per1000": "242"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "15.472962", "49.817492" ] },
+"properties": { "name": "Чехия", "num": "99", "per1000": "239"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "47.481766", "29.31166" ] },
+"properties": { "name": "Кувейт", "num": "100", "per1000": "239"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "15.2", "45.1" ] },
+"properties": { "name": "Хорватия", "num": "101", "per1000": "237"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-77.297508", "18.109581" ] },
+"properties": { "name": "Ямайка", "num": "102", "per1000": "233"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-85.207229", "12.865416" ] },
+"properties": { "name": "Никарагуа", "num": "103", "per1000": "228"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "30.217636", "12.862807" ] },
+"properties": { "name": "Судан", "num": "104", "per1000": "226"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-77.39628", "25.03428" ] },
+"properties": { "name": "Багамские Острова", "num": "105", "per1000": "220"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-58.443832", "-23.442503" ] },
+"properties": { "name": "Парагвай", "num": "106", "per1000": "220"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-51.92528", "-14.235004" ] },
+"properties": { "name": "Бразилия", "num": "107", "per1000": "214"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "35.862285", "33.854721" ] },
+"properties": { "name": "Ливан", "num": "108", "per1000": "214"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "35.529562", "-18.665695" ] },
+"properties": { "name": "Мозамбик", "num": "109", "per1000": "214"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "46.199616", "5.152149" ] },
+"properties": { "name": "Сомали", "num": "110", "per1000": "213"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "114.727669", "4.535277" ] },
+"properties": { "name": "Бруней-Даруссалам", "num": "111", "per1000": "211"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "57.552152", "-20.348404" ] },
+"properties": { "name": "Маврикий", "num": "112", "per1000": "207"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "37.906193", "-0.023559" ] },
+"properties": { "name": "Кения", "num": "113", "per1000": "205"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "34.888822", "-6.369028" ] },
+"properties": { "name": "Танзания", "num": "114", "per1000": "203"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-86.241905", "15.199999" ] },
+"properties": { "name": "Гондурас", "num": "115", "per1000": "201"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-70.162651", "18.735693" ] },
+"properties": { "name": "Доминиканская Республика", "num": "116", "per1000": "199"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-14.452362", "14.497401" ] },
+"properties": { "name": "Сенегал", "num": "117", "per1000": "199"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "29.154857", "-19.015438" ] },
+"properties": { "name": "Зимбабве", "num": "118", "per1000": "197"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "90.433601", "27.514162" ] },
+"properties": { "name": "Бутан", "num": "119", "per1000": "194"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "108.277199", "14.058324" ] },
+"properties": { "name": "Вьетнам", "num": "120", "per1000": "193"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-63.616672", "-38.416097" ] },
+"properties": { "name": "Аргентина", "num": "121", "per1000": "192"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-88.49765", "17.189877" ] },
+"properties": { "name": "Белиз", "num": "122", "per1000": "191"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "50.5577", "26.0667" ] },
+"properties": { "name": "Бахрейн", "num": "123", "per1000": "187"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-66.58973", "6.42375" ] },
+"properties": { "name": "Венесуэла", "num": "124", "per1000": "187"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "104.990963", "12.565679" ] },
+"properties": { "name": "Камбоджа", "num": "125", "per1000": "185"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-77.781167", "21.521757" ] },
+"properties": { "name": "Куба", "num": "126", "per1000": "185"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "100.992541", "15.870032" ] },
+"properties": { "name": "Таиланд", "num": "127", "per1000": "184"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "21.824312", "39.074208" ] },
+"properties": { "name": "Греция", "num": "128", "per1000": "176"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-38.502304", "-12.97304" ] },
+"properties": { "name": "Сальвадор", "num": "129", "per1000": "171"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "90.356331", "23.684994" ] },
+"properties": { "name": "Бангладеш", "num": "130", "per1000": "166"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "40.489673", "9.145" ] },
+"properties": { "name": "Эфиопия", "num": "131", "per1000": "162"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "51.183884", "25.354826" ] },
+"properties": { "name": "Катар", "num": "132", "per1000": "157"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-56.027783", "3.919305" ] },
+"properties": { "name": "Суринам", "num": "133", "per1000": "156"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "14.375416", "35.937496" ] },
+"properties": { "name": "Мальта", "num": "134", "per1000": "152"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-80.782127", "8.537981" ] },
+"properties": { "name": "Панама", "num": "135", "per1000": "151"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-74.297333", "4.570868" ] },
+"properties": { "name": "Колумбия", "num": "136", "per1000": "150"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-78.183406", "-1.831239" ] },
+"properties": { "name": "Эквадор", "num": "137", "per1000": "149"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "143.95555", "-6.314993" ] },
+"properties": { "name": "Папуа — Новая Гвинея", "num": "138", "per1000": "149"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-102.552784", "23.634501" ] },
+"properties": { "name": "Мексика", "num": "139", "per1000": "148"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-55.765835", "-32.522779" ] },
+"properties": { "name": "Уругвай", "num": "140", "per1000": "147"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "14.550072", "47.516231" ] },
+"properties": { "name": "Австрия", "num": "141", "per1000": "146"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "25.748151", "61.92411" ] },
+"properties": { "name": "Финляндия", "num": "142", "per1000": "146"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "10.451526", "51.165691" ] },
+"properties": { "name": "Германия", "num": "143", "per1000": "143"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "14.995463", "46.151241" ] },
+"properties": { "name": "Словения", "num": "144", "per1000": "141"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-83.753428", "9.748917" ] },
+"properties": { "name": "Коста-Рика", "num": "145", "per1000": "140"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "33.429859", "35.126413" ] },
+"properties": { "name": "Кипр", "num": "146", "per1000": "138"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-95.712891", "37.09024" ] },
+"properties": { "name": "Соединенные Штаты Америки", "num": "147", "per1000": "136"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "18.643501", "60.128161" ] },
+"properties": { "name": "Швеция", "num": "148", "per1000": "132"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-59.543198", "13.193887" ] },
+"properties": { "name": "Барбадос", "num": "149", "per1000": "128"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-90.230759", "15.783471" ] },
+"properties": { "name": "Гватемала", "num": "150", "per1000": "123"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-75.015152", "-9.189967" ] },
+"properties": { "name": "Перу", "num": "151", "per1000": "123"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-8.24389", "53.41291" ] },
+"properties": { "name": "Ирландия", "num": "152", "per1000": "119"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-71.542969", "-35.675147" ] },
+"properties": { "name": "Чили", "num": "153", "per1000": "115"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-8.224454", "39.399872" ] },
+"properties": { "name": "Португалия", "num": "154", "per1000": "113"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "8.468946", "60.472024" ] },
+"properties": { "name": "Норвегия", "num": "155", "per1000": "112"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "4.469936", "50.503887" ] },
+"properties": { "name": "Бельгия", "num": "156", "per1000": "111"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "9.501785", "56.26392" ] },
+"properties": { "name": "Дания", "num": "157", "per1000": "108"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "6.129583", "49.815273" ] },
+"properties": { "name": "Люксембург", "num": "158", "per1000": "108"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "103.819836", "1.352083" ] },
+"properties": { "name": "Сингапур", "num": "159", "per1000": "108"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "12.56738", "41.87194" ] },
+"properties": { "name": "Италия", "num": "160", "per1000": "106"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "5.291266", "52.132633" ] },
+"properties": { "name": "Нидерланды", "num": "161", "per1000": "105"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "174.885971", "-40.900557" ] },
+"properties": { "name": "Новая Зеландия", "num": "162", "per1000": "104"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-19.020835", "64.963051" ] },
+"properties": { "name": "Исландия", "num": "163", "per1000": "103"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "8.227512", "46.818188" ] },
+"properties": { "name": "Швейцария", "num": "164", "per1000": "98"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-3.74922", "40.463667" ] },
+"properties": { "name": "Испания", "num": "165", "per1000": "97"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "133.775136", "-25.274398" ] },
+"properties": { "name": "Австралия", "num": "166", "per1000": "92"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "127.096418", "35.907164" ] },
+"properties": { "name": "Республика Корея", "num": "167", "per1000": "92"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "-106.346771", "56.130366" ] },
+"properties": { "name": "Канада", "num": "168", "per1000": "89"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "2.213749", "46.227638" ] },
+"properties": { "name": "Франция", "num": "169", "per1000": "86"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "34.851612", "31.046051" ] },
+"properties": { "name": "Израиль", "num": "170", "per1000": "86"
+}
+},
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "138.252924", "36.204824" ] },
+"properties": { "name": "Япония", "num": "171", "per1000": "82"
+}
+}]
+}

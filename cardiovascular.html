@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Cмертность от сердечно-сосудистых заболеваний</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+
+<style>
+  #header {
+    font-family:"Arial", "Helvetica", sans-serif;
+    position: absolute;
+    left:50px;
+    width:550px;
+  z-index:1;
+    font-size: 22px;
+    font-weight:bold;
+    z-index: 1000;
+    top: 10px;
+    color: #333;
+    text-align: left;
+    padding: 25px; 
+    background: rgba(255,255,255,0.8);
+  }
+    #header2 {
+    font-family:"Arial", "Helvetica", sans-serif;
+        font-size: 13px;
+        font-weight:normal;
+    z-index: 900;
+    color: #333;
+    padding: 15px 0 0 0; 
+    text-align: left;
+  }
+  .sou-ui {
+    	font-family:"Arial", "Helvetica", sans-serif;
+    	    font-size:11px;
+    color:#404040;
+  position:absolute;
+  bottom:5px;left:10px;
+  z-index:1;
+  }
+  .sou-ui a {
+  	text-decoration:none;
+  }
+
+ .item { line-height: 20px; display: inline-block; height: 20px; font-size: 12px; padding: 4px; color: white; min-width: 40px; text-align: center; }
+#d0 { background: #ffa9af; }
+#d100 { background: #ff818a; }
+#d200 { background: #ff4553; }
+#d300 { background: #fe0012; }
+#d400 { background: #cc000d; }
+#d500 { background: #910006; }
+#d600 { background: #5a0001; }
+#d700 { background: #3c0002; }
+
+</style>
+<div id='header'>Cмертность от сердечно-сосудистых заболеваний<div id='header2'>Размер и цвет круга зависят от количества смертей на 100 тыс. чел.
+</br></br><div id='legend'>
+  <div class='item' id='d700'>&gt;&nbsp;700</div><div class='item' id='d600'>699&nbsp;–&nbsp;600</div><div class='item' id='d500'>599&nbsp;–&nbsp;500</div><div class='item' id='d400'>499&nbsp;–&nbsp;400</div><div class='item' id='d300'>399&nbsp;–&nbsp;300</div><div class='item' id='d200'>299&nbsp;–&nbsp;200</div><div class='item' id='d100'>199&nbsp;–&nbsp;100</div><div class='item' id='d0'>&lt;&nbsp;100</div>
+</div>
+</div></div></div>
+<nav id='sou-ui' class='sou-ui'><a href="http://www.rbc.ru/" target="_blanc">© РБК, 2016<a>  Источник: Всемирная организация здравоохранения, данные за 2012 год</nav>
+<div id='map'></div>
+
+<script>
+    var map = L.map('map').setView([35,35], 3);
+var stamenLayer = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
+  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+}).addTo(map);
+// create rectangle
+L.rectangle([
+  [-20000, -20000],
+  [20000, 20000]], {stroke: false, fillColor: "#fff", fillOpacity: 0.9}
+  ).addTo(map);
+ 
+ function getColor(d) {
+      return d > 700  ? '#3c0002' :
+             d > 600  ? '#5a0001' :
+             d > 500  ? '#910006' :
+             d > 400  ? '#cc000d' :
+             d > 300  ? '#fe0012' :
+             d > 200  ? '#ff4553' :
+             d > 100  ? '#ff818a' :
+             d > 0  ? '#ffa9af' :
+                        '#c4c4c4';
+    }
+var featureLayer2 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "cardio.geojson", function( data ) {
+  data.features.forEach(function(f)  {
+  })
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+    radius: Math.sqrt(feature.properties.per1000)/2,
+          fillColor: getColor(feature.properties.per1000),
+          stroke: false,
+          fillOpacity: 0.9});
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3></b>' + 'Место в рейтинге ВОЗ: <b>' + feature.properties.num + '</b></br>'  + 'Количество смертей на 100 тыс. чел.: <b>' + feature.properties.per1000 + '</b></br></br>');
+    }
+}).addTo(map);
+  
+});
+</script>
+</body>
+</html>
