@@ -78,18 +78,6 @@ L.rectangle([
   [20000, 20000]], {stroke: false, fillColor: "#fff", fillOpacity: 0.8}
   ).addTo(map);
 
-    function getColor(d) {
-      return d > 70 ? '#49000a' :
-             d > 60  ? '#6a000f' :
-             d > 50  ? '#8b0013' :
-             d > 40  ? '#E31A1C' :
-             d > 30  ? '#FC4E2A' :
-             d > 20   ? '#ff8025' :
-             d > 10   ? '#fa9943' :
-             d > 0   ? '#feb376' :
-                        '#fcd9cc';
-    }
-
 
 var featureLayer2 = L.featureGroup()
 L.featureGroup()
@@ -101,7 +89,7 @@ L.geoJson(data, {
     return L.circleMarker(latlng, {
     radius: Math.sqrt(feature.properties.all_b),
           //fillColor: getColor(feature.properties.dang_b),
-          fillColor: '#60abff',
+          fillColor: '#00a386',
           stroke: false,
           fillOpacity: 0.9});
     },
