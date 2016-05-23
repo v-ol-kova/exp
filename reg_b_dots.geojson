@@ -1,0 +1,681 @@
+{
+"type": "FeatureCollection",                                                                             
+"features": [
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "82.67586", "51.79363" ] },
+"properties": { "name": "Алтайский край", "all_b": "798", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "127.480172", "54.603506" ] },
+"properties": { "name": "Амурская область", "all_b": "772", "dang_b": "3", "dang_b_txt": "3"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "42.588419", "63.28528" ] },
+"properties": { "name": "Архангельская область", "all_b": "663", "dang_b": "3", "dang_b_txt": "3"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "48.061011", "46.132117" ] },
+"properties": { "name": "Астраханская область", "all_b": "214", "dang_b": "1", "dang_b_txt": "1"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "37.753338", "50.710693" ] },
+"properties": { "name": "Белгородская область", "all_b": "407", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "33.26909", "53.04086" ] },
+"properties": { "name": "Брянская область", "all_b": "343", "dang_b": "4", "dang_b_txt": "4"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "40.592668", "56.155347" ] },
+"properties": { "name": "Владимирская область", "all_b": "232", "dang_b": "5", "dang_b_txt": "5"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "45", "49.760452" ] },
+"properties": { "name": "Волгоградская область", "all_b": "375", "dang_b": "3", "dang_b_txt": "3"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "40.655541", "59.870671" ] },
+"properties": { "name": "Вологодская область", "all_b": "649", "dang_b": "4", "dang_b_txt": "4"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "39.864438", "50.858971" ] },
+"properties": { "name": "Воронежская область", "all_b": "579", "dang_b": "13", "dang_b_txt": "13"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "131.765737", "48.480815" ] },
+"properties": { "name": "Еврейская АО", "all_b": "96", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "116.967656", "53.092877" ] },
+"properties": { "name": "Забайкальский край", "all_b": "1294", "dang_b": "22", "dang_b_txt": "22"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "41.483008", "57.105685" ] },
+"properties": { "name": "Ивановская область", "all_b": "228", "dang_b": "3", "dang_b_txt": "3"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "103.948625", "56.132142" ] },
+"properties": { "name": "Иркутская область", "all_b": "1364", "dang_b": "22", "dang_b_txt": "22"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "43.56285", "43.393247" ] },
+"properties": { "name": "Кабардино-Балкария", "all_b": "279", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "21.481616", "54.823529" ] },
+"properties": { "name": "Калининградская область", "all_b": "694", "dang_b": "39", "dang_b_txt": "39"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "35.188909", "54.387267" ] },
+"properties": { "name": "Калужская область", "all_b": "326", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "158.0571429", "54.7772122" ] },
+"properties": { "name": "Камчатский край", "all_b": "166", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "41.730394", "43.884514" ] },
+"properties": { "name": "Карачаево-Черкесия", "all_b": "308", "dang_b": "4", "dang_b_txt": "4"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "87.405529", "54.757465" ] },
+"properties": { "name": "Кемеровская область", "all_b": "324", "dang_b": "26", "dang_b_txt": "26"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "50.209725", "58.419853" ] },
+"properties": { "name": "Кировская область", "all_b": "163", "dang_b": "24", "dang_b_txt": "24"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "43.95411", "58.550107" ] },
+"properties": { "name": "Костромская область", "all_b": "275", "dang_b": "5", "dang_b_txt": "5"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "39.705598", "45.641529" ] },
+"properties": { "name": "Краснодарский край", "all_b": "805", "dang_b": "5", "dang_b_txt": "5"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "95.110418", "64.247976" ] },
+"properties": { "name": "Красноярский край", "all_b": "1028", "dang_b": "11", "dang_b_txt": "11"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "65.118097", "55.448155" ] },
+"properties": { "name": "Курганская область", "all_b": "309", "dang_b": "3", "dang_b_txt": "3"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "35.381181", "51.763403" ] },
+"properties": { "name": "Курская область", "all_b": "347", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "31.892664", "60.079321" ] },
+"properties": { "name": "Ленинградская область", "all_b": "681", "dang_b": "14", "dang_b_txt": "14"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "39.203227", "52.52647" ] },
+"properties": { "name": "Липецкая область", "all_b": "275", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "153.914991", "62.664342" ] },
+"properties": { "name": "Магаданская область", "all_b": "212", "dang_b": "3", "dang_b_txt": "3"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "37.6173", "55.755826" ] },
+"properties": { "name": "Москва", "all_b": "406", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "38.291765", "55.340396" ] },
+"properties": { "name": "Московская область", "all_b": "1119", "dang_b": "7", "dang_b_txt": "7"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "35.08841", "67.844267" ] },
+"properties": { "name": "Мурманская область", "all_b": "198", "dang_b": "3", "dang_b_txt": "3"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "57.633833", "67.607834" ] },
+"properties": { "name": "Ненецкий АО", "all_b": "21", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "44.029677", "55.799516" ] },
+"properties": { "name": "Нижегородская область", "all_b": "900", "dang_b": "34", "dang_b_txt": "34"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "32.566519", "58.242755" ] },
+"properties": { "name": "Новгородская область", "all_b": "498", "dang_b": "2", "dang_b_txt": "2"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "80.104392", "55.446713" ] },
+"properties": { "name": "Новосибирская область", "all_b": "283", "dang_b": "13", "dang_b_txt": "13"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "73.316734", "55.055467" ] },
+"properties": { "name": "Омская область", "all_b": "136", "dang_b": "1", "dang_b_txt": "1"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "54.618819", "51.763403" ] },
+"properties": { "name": "Оренбургская область", "all_b": "693", "dang_b": "1", "dang_b_txt": "1"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "36.484963", "52.745019" ] },
+"properties": { "name": "Орловская область", "all_b": "203", "dang_b": "3", "dang_b_txt": "3"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "44.094005", "53.141211" ] },
+"properties": { "name": "Пензенская область", "all_b": "270", "dang_b": "9", "dang_b_txt": "9"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "56.587248", "58.823193" ] },
+"properties": { "name": "Пермский край", "all_b": "287", "dang_b": "10", "dang_b_txt": "10"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "135", "45.052564" ] },
+"properties": { "name": "Приморский край", "all_b": "1686", "dang_b": "33", "dang_b_txt": "33"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "29.094009", "56.77086" ] },
+"properties": { "name": "Псковская область", "all_b": "568", "dang_b": "1", "dang_b_txt": "1"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "40.175446", "44.822916" ] },
+"properties": { "name": "Адыгея", "all_b": "115", "dang_b": "1", "dang_b_txt": "1"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "87.0556640625", "50.75035931136963" ] },
+"properties": { "name": "Алтай", "all_b": "461", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "55.9684711", "54.8995971" ] },
+"properties": { "name": "Башкортостан", "all_b": "1085", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "112.406053", "54.833115" ] },
+"properties": { "name": "Бурятия", "all_b": "585", "dang_b": "17", "dang_b_txt": "17"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "47.09498", "42.143189" ] },
+"properties": { "name": "Дагестан", "all_b": "1387", "dang_b": "8", "dang_b_txt": "8"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "44.8203", "43.40517" ] },
+"properties": { "name": "Ингушетия", "all_b": "76", "dang_b": "9", "dang_b_txt": "9"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "45.773161", "46.567685" ] },
+"properties": { "name": "Калмыкия", "all_b": "22", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "32.990555", "63.15587" ] },
+"properties": { "name": "Карелия", "all_b": "615", "dang_b": "6", "dang_b_txt": "6"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "54.831269", "63.863054" ] },
+"properties": { "name": "Коми", "all_b": "404", "dang_b": "4", "dang_b_txt": "4"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "34.526186", "45.226948" ] },
+"properties": { "name": "Крым", "all_b": "326", "dang_b": "50", "dang_b_txt": "50"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "47.960776", "56.438457" ] },
+"properties": { "name": "Марий Эл", "all_b": "221", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "44.068397", "54.236944" ] },
+"properties": { "name": "Мордовия", "all_b": "375", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "124.123753", "66.761345" ] },
+"properties": { "name": "Саха (Якутия)", "all_b": "495", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "44.287097", "43.04513" ] },
+"properties": { "name": "Северная Осетия", "all_b": "214", "dang_b": "2", "dang_b_txt": "2"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "50.726394", "55.180236" ] },
+"properties": { "name": "Татарстан", "all_b": "1150", "dang_b": "15", "dang_b_txt": "15"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "95.626017", "51.887267" ] },
+"properties": { "name": "Тыва", "all_b": "190", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "90.398215", "53.045228" ] },
+"properties": { "name": "Хакасия", "all_b": "227", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "40.4859054", "47.3301721" ] },
+"properties": { "name": "Ростовская область", "all_b": "453", "dang_b": "31", "dang_b_txt": "31"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "41.259566", "54.387596" ] },
+"properties": { "name": "Рязанская область", "all_b": "480", "dang_b": "4", "dang_b_txt": "4"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "50.472553", "53.418384" ] },
+"properties": { "name": "Самарская область", "all_b": "487", "dang_b": "4", "dang_b_txt": "4"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "30.335099", "59.93428" ] },
+"properties": { "name": "Санкт-Петербург", "all_b": "344", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "46.75394", "51.836926" ] },
+"properties": { "name": "Саратовская область", "all_b": "563", "dang_b": "12", "dang_b_txt": "12"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "143.373813", "49.980785" ] },
+"properties": { "name": "Сахалинская область", "all_b": "272", "dang_b": "21", "dang_b_txt": "21"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "61.931623", "59.007735" ] },
+"properties": { "name": "Свердловская область", "all_b": "658", "dang_b": "30", "dang_b_txt": "30"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "33.532861", "44.582446" ] },
+"properties": { "name": "Севастополь", "all_b": "27", "dang_b": "0", "dang_b_txt": "Нет данных"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "32.667738", "54.988299" ] },
+"properties": { "name": "Смоленская область", "all_b": "408", "dang_b": "4", "dang_b_txt": "4"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "43.520214", "44.668099" ] },
+"properties": { "name": "Ставропольский край", "all_b": "267", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "41.421645", "52.641659" ] },
+"properties": { "name": "Тамбовская область", "all_b": "160", "dang_b": "2", "dang_b_txt": "2"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "33.985314", "57.002165" ] },
+"properties": { "name": "Тверская область", "all_b": "991", "dang_b": "29", "dang_b_txt": "29"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "82.67655", "58.896988" ] },
+"properties": { "name": "Томская область", "all_b": "197", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "37.564951", "54.163768" ] },
+"properties": { "name": "Тульская область", "all_b": "266", "dang_b": "2", "dang_b_txt": "2"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "66.948278", "56.963439" ] },
+"properties": { "name": "Тюменская область", "all_b": "471", "dang_b": "1", "dang_b_txt": "1"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "53.027795", "57.067022" ] },
+"properties": { "name": "Удмуртия", "all_b": "391", "dang_b": "16", "dang_b_txt": "16"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "47.776243", "53.979336" ] },
+"properties": { "name": "Ульяновская область", "all_b": "407", "dang_b": "2", "dang_b_txt": "2"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "135", "50.588843" ] },
+"properties": { "name": "Хабаровский край", "all_b": "1152", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "70.641006", "62.228706" ] },
+"properties": { "name": "ХМАО", "all_b": "295", "dang_b": "3", "dang_b_txt": "3"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "60.878896", "54.431942" ] },
+"properties": { "name": "Челябинская область", "all_b": "296", "dang_b": "10", "dang_b_txt": "10"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "45.718747", "43.40233" ] },
+"properties": { "name": "Чечня", "all_b": "261", "dang_b": "6", "dang_b_txt": "6"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "46.928354", "55.559599" ] },
+"properties": { "name": "Чувашия", "all_b": "138", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "171.695216", "65.629836" ] },
+"properties": { "name": "Чукотский АО", "all_b": "84", "dang_b": "0", "dang_b_txt": "0"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "74.8828125", " 65.25670649344259" ] },
+"properties": { "name": "ЯНАО", "all_b": "236", "dang_b": "4", "dang_b_txt": "4"
+}
+}
+
+,
+{
+"type": "Feature",
+"geometry": { "type": "Point", "coordinates": [ "38.838863", "57.899152" ] },
+"properties": { "name": "Ярославская область", "all_b": "386", "dang_b": "10", "dang_b_txt": "10"
+}
+}
+]}
