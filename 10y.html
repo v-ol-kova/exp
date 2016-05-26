@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Компании в регионах: 10 лет</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+
+</style>
+</head>
+<body>
+
+<style>
+  #header {
+    font-family:"Arial", "Helvetica", sans-serif;
+    position: absolute;
+    left:50px;
+    width:500px;
+  z-index:1;
+    font-size: 22px;
+    font-weight:bold;
+    z-index: 1000;
+    top: 10px;
+    color: #333;
+    text-align: left;
+    padding: 25px 25px 5px 25px; 
+    background: rgba(255,255,255,0.8);
+  }
+
+    #header2 {
+    font-family:"Arial", "Helvetica", sans-serif;
+        font-size: 13px;
+        font-weight:normal;
+    z-index: 900;
+    color: #333;
+    padding: 15px 0 0 0; 
+    text-align: left;
+  }
+
+  .sou-ui {
+    	font-family:"Arial", "Helvetica", sans-serif;
+    	    font-size:11px;
+    color:#404040;
+  position:absolute;
+  bottom:5px;left:10px;
+  z-index:1;
+  }
+  .sou-ui a {
+  	text-decoration:none;
+  }
+
+  .item { line-height: 28px; display: inline-block; height: 28px; vertical-align: middle; font-size: 12px; padding: 1px 0 25px 0; color: black; min-width: 35px; text-align: center; }
+
+</style>
+<div id='header'>Компании в регионах: 10 лет<div id='header2'><b>Здесь нужна вводка из нескольких предложений, в том числе о том, что в поп-апе топ-5 сфер</b></br></br>Размер круга зависит от параметра. Кликните, чтобы увидеть данные. Выбирайте год в правом верхнем углу карты</br></br>
+<div id='legend'>
+  <div class='item'><img src="https://raw.githubusercontent.com/v-ol-kova/exp/gh-pages/2.png">
+</div><div class='item'><b>&nbsp;Чистое открытие* на 1000 жителей</b></div>
+</div>
+</div>
+</div></div>
+<nav id='sou-ui' class='sou-ui'><b>* Общее количество компаний, открытых в регионе за год, минус и общее количество компаний, закрытых за год</b></br><a href="http://www.rbc.ru/" target="_blanc">© РБК, 2016<a>  Источник: «БИР-Аналитик» специально для РБК</nav>
+<div id='map'></div>
+
+<script>
+
+
+    var map = L.map('map').setView([62,91], 4);
+
+
+
+var stamenLayer = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
+  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+}).addTo(map);
+
+// create rectangle
+L.rectangle([
+  [-20000, -20000],
+  [20000, 20000]], {stroke: false, fillColor: "#fff", fillOpacity: 0.9}
+  ).addTo(map);
+ 
+ function getColor(d) {
+      return d > 0  ? '#009b50' :
+             d < 0  ? '#f2001c' :
+                        '#c4c4c4';
+    }
+
+
+var featureLayer2 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "10years.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+
+    return L.circleMarker(latlng, {
+
+    radius: Math.sqrt(feature.properties.six_ko)*12,
+          fillColor: getColor(feature.properties.six_ko),
+          stroke: false,
+          fillOpacity: 0.8});
+
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + '<span style="font-size:140%;font-weight:bold">' + feature.properties.six_koz + '</span>' + ' — чистое открытие* компаний в регионе на 1000 чел. в 2006 году' + ' </b></br></br>'  + 'Топ-5 сфер деятельности и количество открытых компаний, работающих в этих сферах:</br></br><b>' + feature.properties.six_l_one_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.six_l_one_zn + '</span></br><b>' + feature.properties.six_l_two_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.six_l_two_zn + '</span></br><b>' + feature.properties.six_l_three_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.six_l_three_zn + '</span></br><b>' + feature.properties.six_l_four_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.six_l_four_zn + '</span></br><b>' + feature.properties.six_l_five_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.six_l_five_zn + '</span></br></br>');
+    }
+}).addTo(featureLayer2);
+  
+});
+
+
+
+var featureLayer3 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "10years.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+    radius: Math.sqrt(feature.properties.seven_ko_m)*12,
+          fillColor: getColor(feature.properties.seven_ko),
+          stroke: false,
+          fillOpacity: 0.8});
+
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + '<span style="font-size:140%;font-weight:bold">' + feature.properties.seven_koz + '</span>' + ' — чистое открытие* компаний в регионе на 1000 чел. в 2007 году' + ' </b></br></br>'  + 'Топ-5 сфер деятельности и количество открытых компаний, работающих в этих сферах:</br></br><b>' + feature.properties.seven_l_one_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.seven_l_one_zn + '</span></br><b>' + feature.properties.seven_l_two_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.seven_l_two_zn + '</span></br><b>' + feature.properties.seven_l_three_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.seven_l_three_zn + '</span></br><b>' + feature.properties.seven_l_four_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.seven_l_four_zn + '</span></br><b>' + feature.properties.seven_l_five_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.seven_l_five_zn + '</span></br></br>');
+    }
+}).addTo(featureLayer3);
+  
+});
+
+ var featureLayer4 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "10years.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+    radius: Math.sqrt(feature.properties.eight_ko)*12,
+          fillColor: getColor(feature.properties.eight_ko),
+          stroke: false,
+          fillOpacity: 0.8});
+
+    },
+    onEachFeature: function (feature, layer) {
+       layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + '<span style="font-size:140%;font-weight:bold">' + feature.properties.eight_koz + '</span>' + ' — чистое открытие* компаний в регионе на 1000 чел. в 2008 году' + ' </b></br></br>'  + 'Топ-5 сфер деятельности и количество открытых компаний, работающих в этих сферах:</br></br><b>' + feature.properties.eight_l_one_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.eight_l_one_zn + '</span></br><b>' + feature.properties.eight_l_two_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.eight_l_two_zn + '</span></br><b>' + feature.properties.eight_l_three_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.eight_l_three_zn + '</span></br><b>' + feature.properties.eight_l_four_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.eight_l_four_zn + '</span></br><b>' + feature.properties.eight_l_five_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.eight_l_five_zn + '</span></br></br>');
+    }
+}).addTo(featureLayer4);
+  
+});
+
+ var featureLayer5 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "10years.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+    radius: Math.sqrt(feature.properties.nine_ko_m)*12,
+          fillColor: getColor(feature.properties.nine_ko),
+          stroke: false,
+          fillOpacity: 0.8});
+
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + '<span style="font-size:140%;font-weight:bold">' + feature.properties.nine_koz + '</span>' + ' — чистое открытие* компаний в регионе на 1000 чел. в 2009 году' + ' </b></br></br>'  + 'Топ-5 сфер деятельности и количество открытых компаний, работающих в этих сферах:</br></br><b>' + feature.properties.nine_l_one_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.nine_l_one_zn + '</span></br><b>' + feature.properties.nine_l_two_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.nine_l_two_zn + '</span></br><b>' + feature.properties.nine_l_three_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.nine_l_three_zn + '</span></br><b>' + feature.properties.nine_l_four_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.nine_l_four_zn + '</span></br><b>' + feature.properties.nine_l_five_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.nine_l_five_zn + '</span></br></br>');
+    }
+}).addTo(featureLayer5);
+  
+});
+
+var featureLayer6 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "10years.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+    radius: Math.sqrt(feature.properties.ten_ko_m)*12,
+          fillColor: getColor(feature.properties.ten_ko),
+          stroke: false,
+          fillOpacity: 0.8});
+
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + '<span style="font-size:140%;font-weight:bold">' + feature.properties.ten_koz + '</span>' + ' — чистое открытие* компаний в регионе на 1000 чел. в 2010 году' + ' </b></br></br>'  + 'Топ-5 сфер деятельности и количество открытых компаний, работающих в этих сферах:</br></br><b>' + feature.properties.ten_l_one_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.ten_l_one_zn + '</span></br><b>' + feature.properties.ten_l_two_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.ten_l_two_zn + '</span></br><b>' + feature.properties.ten_l_three_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.ten_l_three_zn + '</span></br><b>' + feature.properties.ten_l_four_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.ten_l_four_zn + '</span></br><b>' + feature.properties.ten_l_five_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.ten_l_five_zn + '</span></br></br>');
+    }
+}).addTo(featureLayer6);
+  
+});
+
+
+var featureLayer7 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "10years.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+    radius: Math.sqrt(feature.properties.eleven_ko_m)*12,
+          fillColor: getColor(feature.properties.eleven_ko),
+          stroke: false,
+          fillOpacity: 0.8});
+
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + '<span style="font-size:140%;font-weight:bold">' + feature.properties.eleven_koz + '</span>' + ' — чистое открытие* компаний в регионе на 1000 чел. в 2011 году' + ' </b></br></br>'  + 'Топ-5 сфер деятельности и количество открытых компаний, работающих в этих сферах:</br></br><b>' + feature.properties.eleven_l_one_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.eleven_l_one_zn + '</span></br><b>' + feature.properties.eleven_l_two_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.eleven_l_two_zn + '</span></br><b>' + feature.properties.eleven_l_three_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.eleven_l_three_zn + '</span></br><b>' + feature.properties.eleven_l_four_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.eleven_l_four_zn + '</span></br><b>' + feature.properties.eleven_l_five_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.eleven_l_five_zn + '</span></br></br>');
+    }
+}).addTo(featureLayer7);
+  
+});
+
+
+var featureLayer8 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "10years.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+    radius: Math.sqrt(feature.properties.twelve_ko_m)*12,
+          fillColor: getColor(feature.properties.twelve_ko),
+          stroke: false,
+          fillOpacity: 0.8});
+
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + '<span style="font-size:140%;font-weight:bold">' + feature.properties.twelve_koz + '</span>' + ' — чистое открытие* компаний в регионе на 1000 чел. в 2012 году' + ' </b></br></br>'  + 'Топ-5 сфер деятельности и количество открытых компаний, работающих в этих сферах:</br></br><b>' + feature.properties.twelve_l_one_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.twelve_l_one_zn + '</span></br><b>' + feature.properties.twelve_l_two_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.twelve_l_two_zn + '</span></br><b>' + feature.properties.twelve_l_three_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.twelve_l_three_zn + '</span></br><b>' + feature.properties.twelve_l_four_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.twelve_l_four_zn + '</span></br><b>' + feature.properties.twelve_l_five_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.twelve_l_five_zn + '</span></br></br>');
+    }
+}).addTo(featureLayer8);
+  
+});
+
+var featureLayer9 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "10years.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+    radius: Math.sqrt(feature.properties.thirteen_ko_m)*12,
+          fillColor: getColor(feature.properties.thirteen_ko),
+          stroke: false,
+          fillOpacity: 0.8});
+
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + '<span style="font-size:140%;font-weight:bold">' + feature.properties.thirteen_koz + '</span>' + ' — чистое открытие* компаний в регионе на 1000 чел. в 2013 году' + ' </b></br></br>'  + 'Топ-5 сфер деятельности и количество открытых компаний, работающих в этих сферах:</br></br><b>' + feature.properties.thirteen_l_one_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.thirteen_l_one_zn + '</span></br><b>' + feature.properties.thirteen_l_two_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.thirteen_l_two_zn + '</span></br><b>' + feature.properties.thirteen_l_three_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.thirteen_l_three_zn + '</span></br><b>' + feature.properties.thirteen_l_four_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.thirteen_l_four_zn + '</span></br><b>' + feature.properties.thirteen_l_five_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.thirteen_l_five_zn + '</span></br></br>');
+    }
+}).addTo(featureLayer9);
+  
+});
+
+var featureLayer10 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "10years.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+    radius: Math.sqrt(feature.properties.fourteen_ko_m)*12,
+          fillColor: getColor(feature.properties.fourteen_ko),
+          stroke: false,
+          fillOpacity: 0.8});
+
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + '<span style="font-size:140%;font-weight:bold">' + feature.properties.fourteen_koz + '</span>' + ' — чистое открытие* компаний в регионе на 1000 чел. в 2014 году' + ' </b></br></br>'  + 'Топ-5 сфер деятельности и количество открытых компаний, работающих в этих сферах:</br></br><b>' + feature.properties.fourteen_l_one_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.fourteen_l_one_zn + '</span></br><b>' + feature.properties.fourteen_l_two_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.fourteen_l_two_zn + '</span></br><b>' + feature.properties.fourteen_l_three_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.fourteen_l_three_zn + '</span></br><b>' + feature.properties.fourteen_l_four_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.fourteen_l_four_zn + '</span></br><b>' + feature.properties.fourteen_l_five_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.fourteen_l_five_zn + '</span></br></br>');
+    }
+}).addTo(featureLayer10);
+  
+});
+
+var featureLayer11 = L.featureGroup()
+L.featureGroup()
+ $.getJSON( "10years.geojson", function( data ) {
+
+  data.features.forEach(function(f)  {
+
+
+  })
+
+L.geoJson(data, {
+  pointToLayer: function(feature, latlng) {
+    return L.circleMarker(latlng, {
+    radius: Math.sqrt(feature.properties.fifteen_ko_m)*12,
+          fillColor: getColor(feature.properties.fifteen_ko),
+          stroke: false,
+          fillOpacity: 0.8});
+
+    },
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><h3>' + feature.properties.name + '</h3>' + '<span style="font-size:140%;font-weight:bold">' + feature.properties.fifteen_koz + '</span>' + ' — чистое открытие* компаний в регионе на 1000 чел. в 2015 году' + ' </b></br></br>'  + 'Топ-5 сфер деятельности и количество открытых компаний, работающих в этих сферах:</br></br><b>' + feature.properties.fifteen_l_one_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.fifteen_l_one_zn + '</span></br><b>' + feature.properties.fifteen_l_two_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.fifteen_l_two_zn + '</span></br><b>' + feature.properties.fifteen_l_three_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.fifteen_l_three_zn + '</span></br><b>' + feature.properties.fifteen_l_four_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.fifteen_l_four_zn + '</span></br><b>' + feature.properties.fifteen_l_five_name + ':</b> <span style="font-size:120%;font-weight:bold">' + feature.properties.fifteen_l_five_zn + '</span></br></br>');
+    }
+}).addTo(featureLayer11);
+  
+});
+
+
+
+
+featureLayer2.addTo(map);
+
+
+      var one   = featureLayer2,
+        two  = featureLayer3,
+        three   = featureLayer4,
+        four  = featureLayer5,
+        five  = featureLayer6,
+        six   = featureLayer7,
+        seven  = featureLayer8,
+        eight = featureLayer9,
+        nine   = featureLayer10,
+        ten  = featureLayer11;
+
+
+    var baseLayers = {
+      "2006": one,
+      "2007": two,
+      "2008": three,
+      "2009": four,
+      "2010": five,
+      "2011": six,
+      "2012": seven,
+      "2013": eight,
+      "2014": nine,
+      "2015": ten
+    };
+
+    L.control.layers(baseLayers).addTo(map);
+
+
+</script>
+</body>
+</html>
