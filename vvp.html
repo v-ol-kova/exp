@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- code loosely inspired by this block https://gist.github.com/mstanaland/6100713 -->
+<!-- code loosely inspired by this block https://gist.github.com/mstanaland/6100713. Thanks to http://arnicas.github.io! -->
 <meta charset="utf-8">
 <title>Как в России за 10 лет изменилась валовая добавленная стоимость в основных ценах</title>
 <style>
@@ -68,7 +68,6 @@ body {
   <div id="chart"></div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
 <script>
-
 var ru_RU = {
       "decimal": ",",
       "thousands": "\xa0",
@@ -99,7 +98,6 @@ var xScale = d3.scale.ordinal()
 var yScale = d3.scale.linear()
     .rangeRound([height, 0]);
 
-//var color = d3.scale.category20();
 
 var color = d3.scale.ordinal()
     .range(["#3d0008", "#7e0011", "#004c36", "#056243", "#d40c1c", "#067047", "#1f8950", "#309c62", "#47b07d", "#929292", "#a1a1a1", "#4dcb8e", "#b7b7b7", "#cecece", "#dddddd"]);
