@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!-- code loosely inspired by this block https://gist.github.com/mstanaland/6100713 -->
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 12px sans-serif;
+  padding: 40px;
+}
+
+#form {
+      position: relative;
+      right: 10px;
+      top: 10px;
+      padding-bottom: 20px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #CCC;
+  shape-rendering: crispEdges;
+}
+
+
+
+.bar {
+  fill: steelblue;
+}
+
+
+.tooltip {
+  position: absolute;
+  z-index: 10;
+}
+
+.tooltip p {
+  background-color: white;
+  border: gray 1px solid;
+  padding: 10px;
+  max-width: 180px;
+}
+
+  .sou-ui {
+      font-family:"Arial", "Helvetica", sans-serif;
+          font-size:11px;
+    color:#404040;
+  position:absolute;
+  bottom:15px;
+  left:40px;
+  z-index:1;
+  }
+  .sou-ui a {
+    text-decoration:none;
+  }
+
+
+</style>
+<body>
+
+  <h2>Как изменился ВВП России за 10 лет</h2>
+  <p>Наведите курсор, чтобы увидеть данные. Отрасли, доля которых в ВВП выросла, окрашены оттенками зеленого; доля которых упала — красного; доля практически не изменилась — серого</p>
+    <div id="form">
+      <label><input type="radio" name="mode" value="bycount" checked><b>ВВП в текущих ценах, млрд руб.</b></label>
+      <label><input type="radio" name="mode" value="bypercent"><b>Доля ВВП, %</b></label>
+    </div>
+  <div id="chart"></div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<script>
+
+var ru_RU = {
+      "decimal": ",",
+      "thousands": "\xa0",
+      "grouping": [3],
+      "currency": ["", " руб."],
+      "dateTime": "%A, %e %B %Y г. %X",
+      "date": "%d.%m.%Y",
+      "time": "%H:%M:%S",
+      "periods": ["AM", "PM"],
+      "days": ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"],
+      "shortDays": ["вс", "пн", "вт", "ср", "чт", "пт", "сб"],
+      "months": ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+      "shortMonths": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+  };
+    var RU = d3.locale(ru_RU);
+
+var currentMode = "bycount";
+
+var fullwidth = 1600, fullheight = 500;
+
+var margin = {top: 20, right: 850, bottom: 50, left: 42},
+    width = fullwidth - margin.left - margin.right,
+    height = fullheight - margin.top - margin.bottom;
+
+var xScale = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .05);
+
+var yScale = d3.scale.linear()
+    .rangeRound([height, 0]);
+
+//var color = d3.scale.category20();
+
+var color = d3.scale.ordinal()
+    .range(["#3d0008", "#7e0011", "#004c36", "#056243", "#d40c1c", "#067047", "#1f8950", "#309c62", "#47b07d", "#929292", "#a1a1a1", "#4dcb8e", "#b7b7b7", "#cecece", "#dddddd"]);
+
+var xAxis = d3.svg.axis()
+    .scale(xScale)
+    .orient("bottom")
+    .innerTickSize([0])
+    .outerTickSize([0]);
+
+
+
+var yAxis = d3.svg.axis()
+    .scale(yScale)
+    .orient("left")
+    .innerTickSize([5])
+    .outerTickSize([0])
+    .tickFormat(d3.format(".2r")); // for the stacked totals version
+
+var stack = d3.layout
+    .stack(); // default view is "zero" for the count display.
+
+var svg = d3.select("#chart").append("svg")
+    .attr("width", fullwidth)
+    .attr("height", fullheight)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var tooltip = d3.select("body").append("div").attr("class", "tooltip");
+
+d3.csv("data_vvp.csv", function(error, data) {
+
+  if (error) {
+    console.log(error);
+  }
+
+  data.sort(function(a, b) {return d3.ascending(a.Country,b.Country);});
+  // how would we sort by largest total bar?  what would we have to calculate?
+
+  var sector = ["Оптовая и розничная торговля; ремонт автотранспортных средств, мотоциклов, бытовых изделий и предметов личного пользования","Обрабатывающие производства","Операции с недвижимым имуществом, аренда и предоставление услуг","Добыча полезных ископаемых","Транспорт и связь","Государственное управление и обеспечение военной безопасности; социальное страхование","Строительство","Финансовая деятельность","Здравоохранение и предоставление социальных услуг","Сельское хозяйство, охота и лесное хозяйство","Производство и распределение электроэнергии, газа и воды","Образование","Предоставление прочих коммунальных, социальных и персональных услуг","Гостиницы и рестораны","Рыболовство, рыбоводство"];
+
+  color.domain(sector);
+
+  xScale.domain(data.map(function(d) { return d.Country; }));
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis)
+      .selectAll("text")
+        .attr("dy", "1.5em")
+        //.attr("transform", "rotate(-30)")
+        .style("text-anchor", "middle");
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    //.append("text")
+      //.attr("transform", "rotate(-90)")
+      //.attr("y", 6)
+      //.attr("dy", ".71em")
+      //.style("text-anchor", "end")
+      //.text("Млрд руб."); 
+
+  transitionCount(); // this will use the by-count stack, and make the data, and draw.
+
+  drawLegend();
+
+  d3.selectAll("input").on("change", handleFormClick);
+
+  // All the functions for stuff above!
+
+  function handleFormClick() {
+    if (this.value === "bypercent") {
+      currentMode = "bypercent";
+      transitionPercent();
+    } else {
+      currentMode = "bycount";
+      transitionCount();
+    }
+  }
+
+
+  function makeData(sector, data) {
+    return sector.map(function(sect) {
+        return data.map(function(d) {
+          return {x: d.Country, y: +d[sect], sect: sect};
+        })
+      });
+  }
+
+
+  function transitionPercent() {
+
+    yAxis.tickFormat(d3.format("%"));
+    stack.offset("expand");  // use this to get it to be relative/normalized!
+    var stacked = stack(makeData(sector, data));
+    // call function to do the bars, which is same across both formats.
+    transitionRects(stacked);
+  }
+
+  function transitionCount() {
+
+    yAxis.tickFormat(RU.numberFormat(".2r")); // for the stacked totals version
+    stack.offset("zero");
+    var stacked = stack(makeData(sector, data));
+    transitionRects(stacked);
+    }
+
+  function transitionRects(stacked) {
+    // this domain is using the last of the stacked arrays, which is the last sect, and getting the max height.
+    yScale.domain([0, d3.max(stacked[stacked.length-1], function(d) { return d.y0 + d.y; })]);
+
+
+     var sect = svg.selectAll("g.sect")
+      .data(stacked);
+
+    sect.enter().append("g")
+      .attr("class", "sect")
+      .style("fill", function(d, i) { return color(d[0].sect); });
+
+  // then data for each, plus mouseovers - a nested selection/enter here
+   sect.selectAll("rect")
+      .data(function(d) {
+        console.log("array for a rectangle", d);
+        return d; })  // this just gets the array for bar segment.
+    .enter().append("rect")
+      .attr("width", xScale.rangeBand())
+      .on("mouseover", mouseover)
+      .on("mousemove", mousemove)
+      .on("mouseout", mouseout);
+
+    // the thing that needs to transition is the rectangles themselves, not the g parent.
+    sect.selectAll("rect")
+      .transition()
+      .duration(250)
+      .attr("x", function(d) {
+        return xScale(d.x); })
+      .attr("y", function(d) {
+        return yScale(d.y0 + d.y); }) //
+      .attr("height", function(d) {
+        return yScale(d.y0) - yScale(d.y0 + d.y); });  // height is base - tallness
+
+    sect.exit().remove(); // there's actually nothing removed here - we just transition.
+
+    svg.selectAll(".y.axis").transition().call(yAxis);
+  }
+
+  // Building a legend by hand, based on http://bl.ocks.org/mbostock/3886208
+  function drawLegend() {
+
+    // reverse to get the same order as the bar color layers
+    var sector_reversed = sector.slice().reverse();
+
+    var legend = svg.selectAll(".legend")
+        .data(sector_reversed) // make sure your labels are in the right order -- if not, use .reverse() here.
+      .enter().append("g")
+        .attr("class", "legend")
+        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+    legend.append("rect")
+        .attr("x", width + 35)
+        .attr("width", 18)
+        .attr("height", 18)
+        .style("fill", function(d) {return color(d)});
+
+    legend.append("text")
+        .attr("x", width + 62)
+        .attr("y", 9)
+        .attr("dy", ".35em")
+        .style("text-anchor", "start")
+        .text(function(d, i) { return sector_reversed[i].replace(/_/g, " "); });
+
+  }
+
+
+
+  function mouseover(d) {
+  // this will highlight both a dot and its line.
+
+  var number;
+
+  d3.select(this)
+    .transition()
+    .style("stroke", "#444444");
+
+  if (currentMode == "bypercent") {
+    number = RU.numberFormat(".1%")(d.y);
+  } else {
+    number = d.y;
+  }
+
+  tooltip
+    .style("display", null) // this removes the display none setting from it
+    .html("<p>Отрасль: <b>" + d.sect.replace(/_/g, " ") +
+          "</b><br>Значение: <b>" + number + 
+          "</b><br>Год: <b>" + d.x + " </b></p>");
+  }
+
+  function mousemove(d) {
+    tooltip
+      .style("top", (d3.event.pageY - 10) + "px" )
+      .style("left", (d3.event.pageX + 10) + "px");
+    }
+
+  function mouseout(d) {
+    d3.select(this)
+      .transition()
+      .style("stroke", "none");
+
+    tooltip.style("display", "none");  // this sets it to invisible!
+  }
+
+});
+
+</script>
+
+  
+
+<p>Данные Росстата приведены по старой методологии. В ВВП за 2011–2013 годы Росстат включает вмененную ренту (стоимостная</br>оценка аренды жилья, находящегося в собственности), которая существенно увеличивает оценки, — в приведенных данных</br>она не учтена. В 2015 году методология расчета изменилась, поэтому взяты не данные Росстата, а оценки института «Центр развития»</br>НИУ ВШЭ по старой методологии</br></br></br><nav id='sou-ui' class='sou-ui'><a href="http://www.rbc.ru/" target="_blanc">© РБК, 2016<a>  Источники: <b>Росстат, расчеты института «Центр развития» НИУ ВШЭ</b></nav>
+</p>
+</body>
