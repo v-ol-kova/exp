@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 
 <html>
-<head><title>Где чаще копают</title>
+<head>
+  <meta charset=utf-8 />
+  <title>Где чаще копают</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <style>
+  body { margin:0; padding:0; }
+</style>
 </head>
 <body>
 <style>
+  #map { position:absolute; top:150px; bottom:0; width:100%;}
   #header {
     font-family:"Arial", "Helvetica", sans-serif;
     position: absolute;
-    left:50px;
-    width:1420px;
-  z-index:1;
+    left:30px;
     font-size: 22px;
     font-weight:bold;
     z-index: 1;
-    top: 10px;
+    top: 5px;
     color: #333;
     text-align: left;
     padding: 25px 25px 2px 25px; 
@@ -23,7 +28,6 @@
     font-family:"Arial", "Helvetica", sans-serif;
         font-size: 13px;
         font-weight:normal;
-    z-index: 900;
     color: #333;
     padding: 15px 0 0 0; 
     text-align: left;
@@ -35,16 +39,17 @@
   position:absolute;
   bottom:10px;left:10px;
   width:900px;
-  z-index:1;
   }
   .down a {
   	text-decoration:none;
   }
-<div id='header'>Где чаще копают<div id='header2'><b>На какие улицы ремонтники пришли не по разу и еще вернутся</br>
+  </style>
+<div id='header'>Где чаще копают<div id='header2'><b>На какие улицы ремонтники пришли не по разу и еще вернутся</b></br></br>
 Толщина линии зависит от частоты ремонтных работ</br>
 </div></div>
-</div><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=SZAcR6HqxdoqK9EqJVlQtomOe5m82ntE&width=100%&height=641&lang=ru_RU&sourceType=constructor&scroll=true"></script></div>
-<div><nav id='down' class='down'>© Олеся Волкова</br>Источники: zakupki.gov.ru, расчеты <a href="http://www.forbes.ru/rassledovaniya/kompanii/322669-eto-proval-menedzhmenta-na-urovne-goroda" target="_blanc">Forbes</a></nav></div>
-
+<nav id='down' class='down'>© Олеся Волкова&nbsp;&nbsp;&nbsp;Источники: zakupki.gov.ru, расчеты <a href="http://www.forbes.ru/" target="_blanc">Forbes</a></nav>
+<div id='map'>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=SZAcR6HqxdoqK9EqJVlQtomOe5m82ntE&width=100%&height=700&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+</div>
 </body>
 </html>
