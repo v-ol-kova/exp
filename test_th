@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Кто владеет участками в деревне Ящерово</title>
+<style>
+body {
+padding: 20px;
+  font: 12px sans-serif;
+}
+ .sou-ui {
+      font-family:"Arial", "Helvetica", sans-serif;
+          font-size:11px;
+    color:#404040;
+  position:absolute;
+  bottom:25px;
+  left:20px;
+  z-index:1;
+  }
+  .sou-ui a {
+    text-decoration:none;
+  }
+</style>
+<body>
+<div aligne="center"><iframe width="1280" height="760" src="//www.thinglink.com/card/809474808403197954" type="text/html" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe></div>
+
+
+</body>
